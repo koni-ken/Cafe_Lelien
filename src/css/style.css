@@ -279,7 +279,7 @@ body {
     
   }
   .m_sec-ttl::before {
-    left: 18%; 
+    left: 18%;
   }
   .m_sec-ttl::after {
     right: 18%; 
@@ -295,6 +295,8 @@ body {
     width: 60%;
   }
 }
+
+
   /* ---------- news ---------- */
   
   /* ---------- news-1 ---------- */
