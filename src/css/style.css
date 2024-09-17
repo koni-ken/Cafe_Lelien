@@ -270,25 +270,28 @@ body {
 
 
   /* ---------- menu ---------- */
+.menu-kv-box{
+  position: relative;
+  height: 400px;
+}
 .menu-kv{
   width: 100%;
-  height: 400px;
-  position: relative;
-  object-fit: contain;
-  opacity: 0.8;
-}
-.menu-kv-img{
   height: 100%;
+  background-image: linear-gradient(rgba(63, 46, 26, 0.47), rgba(63, 46, 26, 0.47)), url("../img/menu_kv.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
 }
-@media screen and (max-width: 768px) {
-  .menu-kv{
+
+@media screen and (max-width: 769px) {
+  .menu-kv-box{
     height: 320px;
   }
 }
 .menu-inner{
   margin: 0 140px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .menu-inner{
     margin: 0 16px;
   }
