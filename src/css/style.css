@@ -148,7 +148,7 @@ body {
     margin-top: 120px;
     margin-bottom: 48px;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .m_sec-ttl{
       justify-content: left;
     }
@@ -162,7 +162,7 @@ body {
   .m_sec-ttl::before{
     margin-right: 0.7em;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .m_sec-ttl::before{
       display: none;
     }
@@ -170,7 +170,7 @@ body {
   .m_sec-ttl::after{
     margin-left: 0.7em;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .m_sec-ttl::after{
       width: 20em;
     }
@@ -318,7 +318,7 @@ body {
     gap: 24px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .menu-list{
     display: block;
   }
@@ -327,7 +327,7 @@ body {
   width: 33%;
   height: 380px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .menu-item{
     width: 100%;
     margin-bottom: 48px;
@@ -366,7 +366,7 @@ body {
   align-items: center;
   margin-bottom: 120px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .other-menu-list{
     flex-wrap: wrap;
 
@@ -376,7 +376,7 @@ body {
   width: 24%;
   gap: 16px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .other-menu-item{
     width: 48%;
     height: 100%;
