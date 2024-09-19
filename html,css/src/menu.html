@@ -40,10 +40,10 @@
  <!-- css -->
 <link rel="stylesheet" href="css/reset.css" />
 <link rel="stylesheet" href="css/style.css" />
-
+<script src="js/main.js" defer></script>
 </head>
 
-  <body>
+  <body class="menu">
 
     <header class="l_header">
       <h1 class="l_header-logo">
@@ -53,43 +53,43 @@
               </div>
       </a>
     </h1>
-
-      <nav class="l_header-nav">
+    
+      <nav class="l_header-nav js_navigation">
         <ul class="l_header-nav_list">
           <li class="l_header-nav_item">
-            <a href="./index.html" class="l_header-nav_link">Top</a>
+            <a href="index.html" class="l_header-nav_link js_nav-link js_nav-link__top">Top</a>
           </li>
           <li class="l_header-nav_item">
-            <a href="./about.html" class="l_header-nav_link">Consept</a>
+            <a href="concept.html" class="l_header-nav_link ">Consept</a>
           </li>
           <li class="l_header-nav_item">
-            <a href="./service.html" class="l_header-nav_link">Menu</a>
+            <a href="menuhtml" class="l_header-nav_link js_nav-link js_nav-link__menu">Menu</a>
           </li>
           <li class="l_header-nav_item">
-            <a href="./case.html" class="l_header-nav_link">News</a>
+            <a href="news.html" class="l_header-nav_link js_nav-link js_nav-link__news">News</a>
           </li>
           <li class="l_header-nav_item">
-            <a href="./contact.html" class="l_header-nav_link"> Access</a>
+            <a href="" class="l_header-nav_link "> Access</a>
           </li>
           </li>
           <li class="l_header-nav_item">
-            <a href="./contact.html" class="l_header-nav_link">Contact</a>
+            <a href="contact.html" class="l_header-nav_link js_nav-link js_nav-link__contact">Contact</a>
           </li>
         </ul>
       </nav>
-
-<!-- snsアイコンを追従させる? -->
-<!-- <div class="l_header-sns-icon_wrapper">
+    
+    <!-- snsアイコンを追従させる? -->
+    <!-- <div class="l_header-sns-icon_wrapper">
     <a href="" class="l_header-sns_link"><img src="" alt="instagram" width="20" height="20" class="l_header-sns_icon"></a>
-  </div> -->
-
-      <button class="m_hamburger">
+    </div> -->
+    
+      <button class="m_hamburger js_hamburger">
         <span class="m_hamburger-bar"></span>
         <span class="m_hamburger-bar"></span>
         <span class="m_hamburger-bar"></span>
       </button>
     </header>
-
+    
 
     <div class="m_kv-box">
       <div class="m_kv">
@@ -108,7 +108,7 @@
             <ul class="menu-list">
               <li class="menu-item">
                 <div class="menu-img-box">
-                  <img src="img/menu_drink01.jpg" alt="" width="662" height="458" class="menu-img">
+                  <img src="img/menu_drink01.jpg" alt="" width="662" height="458" class="menu-img" alt="カフェラテの画像">
                 </div>
                 <div class="menu-txt-box">
                   <p class="menu-name">カフェラテ</p>
@@ -119,7 +119,7 @@
               
               <li class="menu-item">
                 <div class="menu-img-box">
-                  <img src="img/menu_drink02.jpg" alt="" width="662" height="458" class="menu-img">
+                  <img src="img/menu_drink02.jpg" alt="" width="662" height="458" class="menu-img" alt="ドリップコーヒーの画像">
                 </div>
                 <div class="menu-txt-box">
                   <p class="menu-name">ドリップコーヒー</p>
@@ -130,7 +130,7 @@
 
               <li class="menu-item">
                 <div class="menu-img-box">
-                  <img src="img/menu_drink03.jpg" alt="" width="662" height="458" class="menu-img">
+                  <img src="img/menu_drink03.jpg" alt="" width="662" height="458" class="menu-img" alt="カフェモカの画像">
                 </div>
                 <div class="menu-txt-box">
                   <p class="menu-name">カフェモカ</p>
@@ -143,7 +143,7 @@
             <ul class="other-menu-list">
               <li class="other-menu-item">
                 <div class="other-menu-img-box">
-                  <img src="img/menu_drink04.jpg" alt="" width="520" height="356" class="otehr-menu-img">
+                  <img src="img/menu_drink04.jpg" alt="" width="520" height="356" class="otehr-menu-img" alt="ソイラテの画像">
                 </div>
                 <div class="other-menu-txt-box">
                   <p class="other-menu-name">ソイラテ</p>
@@ -152,7 +152,7 @@
               </li>
               <li class="other-menu-item">
                 <div class="other-menu-img-box">
-                  <img src="img/menu_drink05.jpg" alt="" width="520" height="356" class="otehr-menu-img">
+                  <img src="img/menu_drink05.jpg" alt="" width="520" height="356" class="otehr-menu-img" alt="マキアートの画像">
                 </div>
                 <div class="other-menu-txt-box">
                   <p class="other-menu-name">マキアート</p>
@@ -161,7 +161,7 @@
               </li>
               <li class="other-menu-item">
                 <div class="other-menu-img-box">
-                  <img src="img/menu_drink06.jpg" alt="" width="520" height="356" class="otehr-menu-img">
+                  <img src="img/menu_drink06.jpg" alt="" width="520" height="356" class="otehr-menu-img" alt="ココアの画像">
                 </div>
                 <div class="other-menu-txt-box">
                   <p class="other-menu-name">ココア</p>
@@ -170,7 +170,7 @@
               </li>
               <li class="other-menu-item">
                 <div class="other-menu-img-box">
-                  <img src="img/menu_drink07.jpg" alt="" width="520" height="358" class="otehr-menu-img">
+                  <img src="img/menu_drink07.jpg" alt="" width="520" height="358" class="otehr-menu-img" alt="スムージーの画像">
                 </div>
                 <div class="other-menu-txt-box">
                   <p class="other-menu-name">スムージー</p>
@@ -180,6 +180,9 @@
             </ul>
             
       </div><!-- menu-box -->
+    </section>
+
+    <section class="food">
 
       <h2 class="m_sec-ttl">food</h2>
 
@@ -188,7 +191,7 @@
             <ul class="menu-list">
               <li class="menu-item">
                 <div class="menu-img-box">
-                  <img src="img/menu_food01.jpg" alt="" width="662" height="458" class="menu-img">
+                  <img src="img/menu_food01.jpg" alt="" width="662" height="458" class="menu-img" alt="メープルパンケーキの画像">
                 </div>
                 <div class="menu-txt-box">
                   <p class="menu-name">メープルパンケーキ</p>
@@ -199,7 +202,7 @@
               
               <li class="menu-item">
                 <div class="menu-img-box">
-                  <img src="img/menu_food02.jpg" alt="" width="662" height="458" class="menu-img">
+                  <img src="img/menu_food02.jpg" alt="" width="662" height="458" class="menu-img" alt="プリンの画像">
                 </div>
                 <div class="menu-txt-box">
                   <p class="menu-name">喫茶店のプリン</p>
@@ -210,7 +213,7 @@
 
               <li class="menu-item">
                 <div class="menu-img-box">
-                  <img src="img/menu_food03.jpg" alt="" width="678" height="474" class="menu-img">
+                  <img src="img/menu_food03.jpg" alt="" width="678" height="474" class="menu-img" alt="季節のケーキセットの画像">
                 </div>
                 <div class="menu-txt-box">
                   <p class="menu-name">季節のケーキセット</p>
@@ -223,7 +226,7 @@
             <ul class="other-menu-list">
               <li class="other-menu-item">
                 <div class="other-menu-img-box">
-                  <img src="img/menu_food04.jpg" alt="" width="521" height="359" class="otehr-menu-img">
+                  <img src="img/menu_food04.jpg" alt="" width="521" height="359" class="otehr-menu-img" alt="和風きのこパスタの画像">
                 </div>
                 <div class="other-menu-txt-box">
                   <p class="other-menu-name">和風きのこパスタ</p>
@@ -232,7 +235,7 @@
               </li>
               <li class="other-menu-item">
                 <div class="other-menu-img-box">
-                  <img src="img/menu_food05.jpg" alt="" width="521" height="359" class="otehr-menu-img">
+                  <img src="img/menu_food05.jpg" alt="" width="521" height="359" class="otehr-menu-img" alt="こだわりカルボの画像">
                 </div>
                 <div class="other-menu-txt-box">
                   <p class="other-menu-name">こだわりカルボ</p>
@@ -241,7 +244,7 @@
               </li>
               <li class="other-menu-item">
                 <div class="other-menu-img-box">
-                  <img src="img/menu_food06.jpg" alt="" width="521" height="359" class="otehr-menu-img">
+                  <img src="img/menu_food06.jpg" alt="" width="521" height="359" class="otehr-menu-img" alt="チキンサンドの画像">
                 </div>
                 <div class="other-menu-txt-box">
                   <p class="other-menu-name">チキンサンド</p>
@@ -250,7 +253,7 @@
               </li>
               <li class="other-menu-item">
                 <div class="other-menu-img-box">
-                  <img src="img/menu_food07.jpg" alt="" width="537" height="375" class="otehr-menu-img">
+                  <img src="img/menu_food07.jpg" alt="" width="537" height="375" class="otehr-menu-img" alt="チーズバーガーの画像">
                 </div>
                 <div class="other-menu-txt-box">
                   <p class="other-menu-name">チーズバーガー</p>
@@ -263,6 +266,9 @@
 
     </section>
 
+
+    
+
    </div> <!-- menu-inner -->
 
    <footer class="l_footer">
@@ -272,25 +278,28 @@
               <img src="img/logo_white.svg" alt="ロゴ" class="l_footer_thumb">
             </div>
       </a>
-  </h1>
+    </h1>
   
     <div class="l_footer-nav">
       <ul class="l_footer-nav_list">
         <li class="l_footer-nav_item">
-          <a href="concept.html" class="l_footer-nav_link">Consept</a>
+          <a href="index.html" class="l_footer-nav_link js_nav-link js_nav-link__top">TOP</a>
         </li>
         <li class="l_footer-nav_item">
-          <a href="menu.html" class="l_footer-nav_link">Menu</a>
+          <a href="concept.html" class="l_footer-nav_link ">Consept</a>
         </li>
         <li class="l_footer-nav_item">
-          <a href="news.html" class="l_footer-nav_link">News</a>
+          <a href="menu.html" class="l_footer-nav_link js_nav-link js_nav-link__menu">Menu</a>
+        </li>
+        <li class="l_footer-nav_item">
+          <a href="news.html" class="l_footer-nav_link js_nav-link js_nav-link__news">News</a>
         </li>
         <li class="l_footer-nav_item">
           <a href="#access" class="l_footer-nav_link">Access</a>
         </li>
         </li>
         <li class="l_footer-nav_item">
-          <a href="contact.html" class="l_footer-nav_link">Contact</a>
+          <a href="contact.html" class="l_footer-nav_link js_nav-link js_nav-link__contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -301,7 +310,7 @@
       <small class="l_footer-copyright_txt">&copy; 2024 LeLien.</small>
     </p>
   </footer>
-  
+
 
   </body>
 </html>
