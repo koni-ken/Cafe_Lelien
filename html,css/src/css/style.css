@@ -249,6 +249,26 @@ body {
     transform: translateY(-100%);
   }
 
+
+  .js_hamburger.is-active .m_hamburger-bar:first-child {
+    top: 50%;
+    transform: translate(-50%, 0) rotate(45deg);
+  }
+  
+  .js_hamburger.is-active .m_hamburger-bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .js_hamburger.is-active .m_hamburger-bar:last-child {
+    top: 50%;
+    transform: translate(-50%, 0) rotate(-45deg);
+  }
+
+  .js_navigation.is-active {
+    opacity: 1;
+    pointer-events: inherit;
+  }
+
   .m_btn-wrapper {
     width: 280px;
     height: 64px;
@@ -445,6 +465,7 @@ body {
   
   /* ---------- contact ---------- */
 
+<<<<<<< HEAD
   /* ----------- js --------------- */
   @media screen and (min-width: 1080px) {
   .js_navigation {
@@ -472,3 +493,9 @@ body {
   transform: translate(-50%, 0) rotate(-45deg);
 }
 
+=======
+  .js_nav-link.is-active{
+    opacity: 0.3;
+    border-bottom: solid;
+  }
+>>>>>>> develop
