@@ -8,7 +8,7 @@
 <meta name="format-detection" content="telephone=no" />
 
 <!-- favicon/web-clip-icon -->
-<link rel="icon" href="favicon.ico" type="image/ico" />
+<link rel="icon" href="" type="image/ico" />
 <link rel="icon" href="favicon.png" type="image/png" />
 <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 <link rel="apple-touch-icon" href="webclip.png" />
@@ -40,7 +40,10 @@
  <!-- css -->
 <link rel="stylesheet" href="css/reset.css" />
 <link rel="stylesheet" href="css/style.css" />
+
 <script src="js/main.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 
   <body class="menu">
@@ -63,7 +66,7 @@
             <a href="concept.html" class="l_header-nav_link ">Consept</a>
           </li>
           <li class="l_header-nav_item">
-            <a href="menuhtml" class="l_header-nav_link js_nav-link js_nav-link__menu">Menu</a>
+            <a href="menu.html" class="l_header-nav_link js_nav-link js_nav-link__menu">Menu</a>
           </li>
           <li class="l_header-nav_item">
             <a href="news.html" class="l_header-nav_link js_nav-link js_nav-link__news">News</a>
@@ -77,12 +80,7 @@
           </li>
         </ul>
       </nav>
-    
-    <!-- snsアイコンを追従させる? -->
-    <!-- <div class="l_header-sns-icon_wrapper">
-    <a href="" class="l_header-sns_link"><img src="" alt="instagram" width="20" height="20" class="l_header-sns_icon"></a>
-    </div> -->
-    
+        
       <button class="m_hamburger js_hamburger">
         <span class="m_hamburger-bar"></span>
         <span class="m_hamburger-bar"></span>
@@ -92,185 +90,184 @@
     
 
     <div class="m_kv-box">
-      <div class="m_kv">
+      <div class="m_kv kv-menu">
         <p class="m_kv-txt">Menu</p>
       </div>  
     </div>
-
-
-    <div class="menu-inner">
+  <main>
+    <div class="menu_inner">
 
     <section class="drink">
-      <h2 class="m_sec-ttl">drink</h2>
-
-      <div class="menu-box">
+      <h2 class="m_sec-ttl drink">drink</h2>
+   
+      <div class="menu_box">
   
-            <ul class="menu-list">
-              <li class="menu-item">
-                <div class="menu-img-box">
-                  <img src="img/menu_drink01.jpg" alt="" width="662" height="458" class="menu-img" alt="カフェラテの画像">
+            <ul class="menu_list">
+              <li class="menu_list-item">
+                <div class="menu_img-box">
+                  <img src="img/menu_drink01.jpg" alt="" width="662" height="458" class="menu_img" alt="カフェラテの画像">
                 </div>
-                <div class="menu-txt-box">
-                  <p class="menu-name">カフェラテ</p>
-                  <p class="menu-price">￥600</p>
-                </div><!-- menu-txt-box -->
-                <p class="menu-dtl">厳選されたコーヒー豆を丁寧に抽出し、クリーミーなミルクと絶妙にブレンドした一杯。</p>    
+                <div class="menu_txt-box">
+                  <p class="menu_name">カフェラテ</p>
+                  <p class="menu_price">￥600</p>
+                </div><!-- menu_txt-box -->
+                <p class="menu_dtl">厳選されたコーヒー豆を丁寧に抽出し、クリーミーなミルクと絶妙にブレンドした一杯。</p>    
               </li>
               
-              <li class="menu-item">
-                <div class="menu-img-box">
-                  <img src="img/menu_drink02.jpg" alt="" width="662" height="458" class="menu-img" alt="ドリップコーヒーの画像">
+              <li class="menu_list-item">
+                <div class="menu_img-box">
+                  <img src="img/menu_drink02.jpg" alt="" width="662" height="458" class="menu_img" alt="ドリップコーヒーの画像">
                 </div>
-                <div class="menu-txt-box">
-                  <p class="menu-name">ドリップコーヒー</p>
-                  <p class="menu-price">￥500</p>
-                </div><!-- menu-txt-box -->
-                <p class="menu-dtl">鮮な豆を一杯ずつ丁寧にハンドドリップ。お湯の温度や注ぎ方にこだわり、豆本来の風味を最大限に引き出しました。</p>    
+                <div class="menu_txt-box">
+                  <p class="menu_name">ドリップコーヒー</p>
+                  <p class="menu_price">￥500</p>
+                </div><!-- menu_txt-box -->
+                <p class="menu_dtl">鮮な豆を一杯ずつ丁寧にハンドドリップ。お湯の温度や注ぎ方にこだわり、豆本来の風味を最大限に引き出しました。</p>    
               </li>
 
-              <li class="menu-item">
-                <div class="menu-img-box">
-                  <img src="img/menu_drink03.jpg" alt="" width="662" height="458" class="menu-img" alt="カフェモカの画像">
+              <li class="menu_list-item">
+                <div class="menu_img-box">
+                  <img src="img/menu_drink03.jpg" alt="" width="662" height="458" class="menu_img" alt="カフェモカの画像">
                 </div>
-                <div class="menu-txt-box">
-                  <p class="menu-name">カフェモカ</p>
-                  <p class="menu-price">￥700</p>
-                </div><!-- menu-txt-box -->
-                <p class="menu-dtl">チョコレートとエスプレッソの絶妙なハーモニーが楽しめる一杯。</p>    
+                <div class="menu_txt-box">
+                  <p class="menu_name">カフェモカ</p>
+                  <p class="menu_price">￥700</p>
+                </div><!-- menu_txt-box -->
+                <p class="menu_dtl">チョコレートとエスプレッソの絶妙なハーモニーが楽しめる一杯。</p>    
               </li>
             </ul>
 
-            <ul class="other-menu-list">
-              <li class="other-menu-item">
-                <div class="other-menu-img-box">
-                  <img src="img/menu_drink04.jpg" alt="" width="520" height="356" class="otehr-menu-img" alt="ソイラテの画像">
+            <ul class="menu_other-list">
+              <li class="menu_other-item">
+                <div class="menu_other-img-box">
+                  <img src="img/menu_drink04.jpg" alt="" width="520" height="356" class="otehr-menu_img" alt="ソイラテの画像">
                 </div>
-                <div class="other-menu-txt-box">
-                  <p class="other-menu-name">ソイラテ</p>
-                  <p class="other-menu-price">￥600</p>    
-                </div>
-              </li>
-              <li class="other-menu-item">
-                <div class="other-menu-img-box">
-                  <img src="img/menu_drink05.jpg" alt="" width="520" height="356" class="otehr-menu-img" alt="マキアートの画像">
-                </div>
-                <div class="other-menu-txt-box">
-                  <p class="other-menu-name">マキアート</p>
-                  <p class="other-menu-price">￥600</p>  
+                <div class="menu_other-txt-box">
+                  <p class="menu_other-name">ソイラテ</p>
+                  <p class="menu_other-price">￥600</p>    
                 </div>
               </li>
-              <li class="other-menu-item">
-                <div class="other-menu-img-box">
-                  <img src="img/menu_drink06.jpg" alt="" width="520" height="356" class="otehr-menu-img" alt="ココアの画像">
+              <li class="menu_other-item">
+                <div class="menu_other-img-box">
+                  <img src="img/menu_drink05.jpg" alt="" width="520" height="356" class="otehr-menu_img" alt="マキアートの画像">
                 </div>
-                <div class="other-menu-txt-box">
-                  <p class="other-menu-name">ココア</p>
-                  <p class="other-menu-price">￥450</p>  
+                <div class="menu_other-txt-box">
+                  <p class="menu_other-name">マキアート</p>
+                  <p class="menu_other-price">￥600</p>  
                 </div>
               </li>
-              <li class="other-menu-item">
-                <div class="other-menu-img-box">
-                  <img src="img/menu_drink07.jpg" alt="" width="520" height="358" class="otehr-menu-img" alt="スムージーの画像">
+              <li class="menu_other-item">
+                <div class="menu_other-img-box">
+                  <img src="img/menu_drink06.jpg" alt="" width="520" height="356" class="otehr-menu_img" alt="ココアの画像">
                 </div>
-                <div class="other-menu-txt-box">
-                  <p class="other-menu-name">スムージー</p>
-                  <p class="other-menu-price">￥600</p>    
+                <div class="menu_other-txt-box">
+                  <p class="menu_other-name">ココア</p>
+                  <p class="menu_other-price">￥450</p>  
+                </div>
+              </li>
+              <li class="menu_other-item">
+                <div class="menu_other-img-box">
+                  <img src="img/menu_drink07.jpg" alt="" width="520" height="358" class="otehr-menu_img" alt="スムージーの画像">
+                </div>
+                <div class="menu_other-txt-box">
+                  <p class="menu_other-name">スムージー</p>
+                  <p class="menu_other-price">￥600</p>    
                 </div>
               </li>
             </ul>
             
-      </div><!-- menu-box -->
+      </div><!-- menu_box -->
     </section>
 
     <section class="food">
 
-      <h2 class="m_sec-ttl">food</h2>
+      <h2 class="m_sec-ttl food">food</h2>
 
-      <div class="menu-box">
+      <div class="menu_box">
   
-            <ul class="menu-list">
-              <li class="menu-item">
-                <div class="menu-img-box">
-                  <img src="img/menu_food01.jpg" alt="" width="662" height="458" class="menu-img" alt="メープルパンケーキの画像">
+            <ul class="menu_list">
+              <li class="menu_list-item">
+                <div class="menu_img-box">
+                  <img src="img/menu_food01.jpg" alt="" width="662" height="458" class="menu_img" alt="メープルパンケーキの画像">
                 </div>
-                <div class="menu-txt-box">
-                  <p class="menu-name">メープルパンケーキ</p>
-                  <p class="menu-price">￥1500</p>
-                </div><!-- menu-txt-box -->
-                <p class="menu-dtl">１枚１枚丁寧に焼き上げたふわふわなパンケーキ。メープルシロップをたっぷりかけてお召し上がりください。</p>    
+                <div class="menu_txt-box">
+                  <p class="menu_name">メープルパンケーキ</p>
+                  <p class="menu_price">￥1500</p>
+                </div><!-- menu_txt-box -->
+                <p class="menu_dtl">１枚１枚丁寧に焼き上げたふわふわなパンケーキ。メープルシロップをたっぷりかけてお召し上がりください。</p>    
               </li>
               
-              <li class="menu-item">
-                <div class="menu-img-box">
-                  <img src="img/menu_food02.jpg" alt="" width="662" height="458" class="menu-img" alt="プリンの画像">
+              <li class="menu_list-item">
+                <div class="menu_img-box">
+                  <img src="img/menu_food02.jpg" alt="" width="662" height="458" class="menu_img" alt="プリンの画像">
                 </div>
-                <div class="menu-txt-box">
-                  <p class="menu-name">喫茶店のプリン</p>
-                  <p class="menu-price">￥500</p>
-                </div><!-- menu-txt-box -->
-                <p class="menu-dtl">なめらかでとろけるような食感が魅力の自家製プリン。優しい甘さと濃厚なカスタードの風味が、どこか懐かしい味わいを届けます。</p>    
+                <div class="menu_txt-box">
+                  <p class="menu_name">喫茶店のプリン</p>
+                  <p class="menu_price">￥500</p>
+                </div><!-- menu_txt-box -->
+                <p class="menu_dtl">なめらかでとろけるような食感が魅力の自家製プリン。優しい甘さと濃厚なカスタードの風味が、どこか懐かしい味わいを届けます。</p>    
               </li>
 
-              <li class="menu-item">
-                <div class="menu-img-box">
-                  <img src="img/menu_food03.jpg" alt="" width="678" height="474" class="menu-img" alt="季節のケーキセットの画像">
+              <li class="menu_list-item">
+                <div class="menu_img-box">
+                  <img src="img/menu_food03.jpg" alt="" width="678" height="474" class="menu_img" alt="季節のケーキセットの画像">
                 </div>
-                <div class="menu-txt-box">
-                  <p class="menu-name">季節のケーキセット</p>
-                  <p class="menu-price">￥700</p>
-                </div><!-- menu-txt-box -->
-                <p class="menu-dtl">季節のケーキとお好きなドリンクをセットで楽しめます。</p>    
+                <div class="menu_txt-box">
+                  <p class="menu_name">季節のケーキセット</p>
+                  <p class="menu_price">￥700</p>
+                </div><!-- menu_txt-box -->
+                <p class="menu_dtl">季節のケーキとお好きなドリンクをセットで楽しめます。</p>    
               </li>
             </ul>
 
-            <ul class="other-menu-list">
-              <li class="other-menu-item">
-                <div class="other-menu-img-box">
-                  <img src="img/menu_food04.jpg" alt="" width="521" height="359" class="otehr-menu-img" alt="和風きのこパスタの画像">
+            <ul class="menu_other-list">
+              <li class="menu_other-item">
+                <div class="menu_other-img-box">
+                  <img src="img/menu_food04.jpg" alt="" width="521" height="359" class="otehr-menu_img" alt="和風きのこパスタの画像">
                 </div>
-                <div class="other-menu-txt-box">
-                  <p class="other-menu-name">和風きのこパスタ</p>
-                  <p class="other-menu-price">￥1000</p>    
-                </div>
-              </li>
-              <li class="other-menu-item">
-                <div class="other-menu-img-box">
-                  <img src="img/menu_food05.jpg" alt="" width="521" height="359" class="otehr-menu-img" alt="こだわりカルボの画像">
-                </div>
-                <div class="other-menu-txt-box">
-                  <p class="other-menu-name">こだわりカルボ</p>
-                  <p class="other-menu-price">￥1200</p>  
+                <div class="menu_other-txt-box">
+                  <p class="menu_other-name">和風きのこパスタ</p>
+                  <p class="menu_other-price">￥1000</p>    
                 </div>
               </li>
-              <li class="other-menu-item">
-                <div class="other-menu-img-box">
-                  <img src="img/menu_food06.jpg" alt="" width="521" height="359" class="otehr-menu-img" alt="チキンサンドの画像">
+              <li class="menu_other-item">
+                <div class="menu_other-img-box">
+                  <img src="img/menu_food05.jpg" alt="" width="521" height="359" class="otehr-menu_img" alt="こだわりカルボの画像">
                 </div>
-                <div class="other-menu-txt-box">
-                  <p class="other-menu-name">チキンサンド</p>
-                  <p class="other-menu-price">￥600</p>  
+                <div class="menu_other-txt-box">
+                  <p class="menu_other-name">こだわりカルボ</p>
+                  <p class="menu_other-price">￥1200</p>  
                 </div>
               </li>
-              <li class="other-menu-item">
-                <div class="other-menu-img-box">
-                  <img src="img/menu_food07.jpg" alt="" width="537" height="375" class="otehr-menu-img" alt="チーズバーガーの画像">
+              <li class="menu_other-item">
+                <div class="menu_other-img-box">
+                  <img src="img/menu_food06.jpg" alt="" width="521" height="359" class="otehr-menu_img" alt="チキンサンドの画像">
                 </div>
-                <div class="other-menu-txt-box">
-                  <p class="other-menu-name">チーズバーガー</p>
-                  <p class="other-menu-price">￥1300</p>    
+                <div class="menu_other-txt-box">
+                  <p class="menu_other-name">チキンサンド</p>
+                  <p class="menu_other-price">￥600</p>  
+                </div>
+              </li>
+              <li class="menu_other-item">
+                <div class="menu_other-img-box">
+                  <img src="img/menu_food07.jpg" alt="" width="537" height="375" class="otehr-menu_img" alt="チーズバーガーの画像">
+                </div>
+                <div class="menu_other-txt-box">
+                  <p class="menu_other-name">チーズバーガー</p>
+                  <p class="menu_other-price">￥1300</p>    
                 </div>
               </li>
             </ul>
             
-      </div><!-- menu-box -->
+      </div><!-- menu_box -->
 
     </section>
-
+  
 
     
 
-   </div> <!-- menu-inner -->
-
+   </div> <!-- menu_inner -->
+</main>
    <footer class="l_footer">
     <div class="l_footer-logo">
       <a href="./index.html" class="l_footer-logo_link">

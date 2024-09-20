@@ -65,85 +65,114 @@ body {
 
 
 /* ----------------- header ------------------ */
-
-/* ヘッダー全体のスタイル */
-.l_header {
-  background: var(--white-color);
-  padding: 0 24px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: var(--z-index-header);
-  width: 100%;
-  height: 72px;
+/* ヘッダーの基本スタイル */
+.l_header{
+  padding: 0 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 72px;
+  width: 100%;
   position: fixed;
+  z-index: var(--z-index-header);
+  top: 0;
+  left: 0;
+  background-color: var(--white-color);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0.5s ease;
 }
 
-/* ナビゲーションメニューリスト */
-.l_header-nav_list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  gap: 20px; 
+/* ナビゲーションメニューの基本スタイル（非アクティブ時） */
+.l_header-nav{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  transition: transform 0.5s ease, opacity 0.5s ease; /* アニメーション */
+  height: 100vh; /* 画面全体 */
+  opacity: 0; /* 非アクティブ時は透明 */
+  background: var(--accent-color); /* 背景色 */
 }
 
-@media screen and (min-width: 1080px) {
-  .l_header-nav_list {
-    gap: 48px; /* 大きめの画面用 */
+/* ナビゲーションリストのスタイル */
+.l_header-nav_list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ナビゲーション項目 */
+.l_header-nav_item{
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* 画面幅が768px以上の場合 */
+@media screen and (min-width: 768px) {
+  /* ハンバーガーメニューを非表示 */
+  .m_hamburger {
+    display: none;
   }
-}
 
-  
-  /* ハンバーガーメニューがアクティブになった時のナビ表示 */
-  .l_header-nav.is-active {
-    display: block;
+  /* ナビゲーションメニューを横並び、右寄せ */
+  .l_header-nav {
+    position: relative;
     opacity: 1;
-    position: absolute;
-    top: 72px; /* ヘッダーの下に表示 */
-    left: 0;
-    width: 100%;
-    z-index: var(--z-index-header);
-    padding: 16px 0; 
-    text-align: center;
+    transform: translateY(0);
+    height: auto;
+    display: flex;
+    justify-content: flex-end; /* 右寄せ */
+    align-items: center; /* 上下中央揃え */
+    background: none; /* 背景をクリアに */
   }
 
+  .l_header-nav_list {
+    display: flex;
+    gap: 24px; /* 各アイテム間のスペース */
+  }
 
-  /* 各ナビゲーションアイテム */
   .l_header-nav_item {
-    color: var(--white-color);
+    margin-bottom: 0;
+    font-size: 16px; /* フォントサイズを調整 */
+    opacity: 1; /* 透明ではない */
+    color: var(--primary-color); /* 色を指定 */
+  }
+}
+
+/* 画面幅が768px以下の場合 */
+@media screen and (max-width: 767px) {
+  /* ハンバーガーメニューを表示 */
+  .m_hamburger {
+    display: block;
+  }
+
+  /* ナビゲーションがアクティブな場合のスタイル */
+  .l_header-nav.is-active {
+    transform: translateY(0); 
+    opacity: 1; 
+    height: 100vh; /* 画面全体に広がる */
+  }
+
+  .l_header-nav.is-active .l_header-nav_list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 上下中央揃え */
+    flex-direction: column; /* 縦並び */
+  }
+
+  .l_header-nav.is-active .l_header-nav_item {
+    margin-bottom: 16px;
+    font-size: 24px;
     font-weight: bold;
   }
+}
 
-  /* モバイルデザイン対応: ナビゲーションが表示される状態 */
-  .l_header-nav {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
 
-  .l_header-nav.is-active {
-    display: block;
-    opacity: 1;
-    height: 100vh;
-    background: var(--primary-color);
-  }
-  .l_header-nav.is-active .l_header-nav_list{
-    flex-direction: column;
-  }
-  .l_header-nav.is-active .l_header-nav_list .l_header-nav_item{
-    font-size: 24px;
-    gap: 32px;
-  }
-  .l_header--hidden {
-    transform: translateY(-100%); /* 画面の上にスライドアウト */
-    transition: all 0.5s;
-  }
-
-  /* ----------------- header ------------------ */
+/* ----------------- header ------------------ */
 
  /* ------------ hamburger ----------------- */
 
@@ -183,28 +212,18 @@ body {
   top: 10px;
 }
 
+.l_header.hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.l_footer {
+  height: 100px; /* フッターの高さに合わせて調整 */
+}
+
  /* ------------ hamburger ----------------- */
 
 
-
-/* メディアクエリで画面サイズに応じた設定を追加 */
-@media screen and (min-width: 768px) {
-  .l_header-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 1;
-    background-color: transparent; /* PC画面では背景透明 */
-    padding: 0;
-  }
-  
-  .m_hamburger {
-    display: none; /* 768px以上ではハンバーガーメニューを非表示に */
-  }
-  .l_header-nav_item{
-    color: var(--primary-color);
-  }
-}
 
 /* -------------------- footer -------------------------- */
 
@@ -279,7 +298,54 @@ body {
     opacity: 0.7;
     border-bottom: 1px solid;
   }
+
   /* ---------- module ---------- */
+
+  /* --------- m_kv --------------- */
+
+
+
+  .m_kv-box{
+    position: relative;
+    height: 400px;
+  }
+  .m_kv{
+    width: 100%;
+    height: 100%;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    margin-top: 72px;
+  }
+  .m_kv.kv-menu{
+    background-image: linear-gradient(rgba(63, 46, 26, 0.47), rgba(63, 46, 26, 0.47)),
+     url("../img/menu_kv.jpg");
+  }
+  .m_kv.kv-news{
+    background-image: linear-gradient(rgba(63, 46, 26, 0.47), rgba(63, 46, 26, 0.47)), 
+    url("../img/news_kv.jpg");
+    background-position: top;
+  }
+
+  
+  
+  @media screen and (max-width: 769px) {
+    .m_kv-box{
+      height: 320px;
+    }
+  }
+  
+  .m_kv-txt{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+    /* --------- m_kv --------------- */
 
   .m_sec-ttl{
     display: flex;
@@ -373,112 +439,24 @@ body {
     transform: translate(-50%, 0) rotate(-45deg);
   }
 
-  .js_navigation.is-active {
-    opacity: 1;
-    pointer-events: inherit;
-  }
-
-  .m_btn-wrapper {
-    width: 280px;
-    height: 64px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .m_btn {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .m_btn__more {
-    color: var(--white-color);
-    font-size: 18px;
-    font-weight: bold;
-    border: 2px solid var(--primary-color);
-    background: var(--primary-color);
-    position: relative;
-    z-index: var(--z-index-default);
-    cursor: pointer;
-  }
-  
-  .m_btn__more::after {
-    content: "";
-    width: 60px;
-    height: 15px;
-    border-bottom: solid 1px;
-    border-right: solid 1px;
-    transform: skew(45deg);width: 100px;
-    height: 6px;
-    border-bottom: solid 1px;
-    border-right: solid 1px;
-    transform: skew(45deg);
-  }
-
-  .m_kv-box{
-    position: relative;
-    height: 400px;
-  }
-  .m_kv{
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(rgba(63, 46, 26, 0.47), rgba(63, 46, 26, 0.47)), url("../img/menu_kv.jpg");
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center; 
-    margin-top: 72px;
-  }
-  
-  @media screen and (max-width: 769px) {
-    .m_kv{
-      height: 320px;
-    }
-  }
-  
-  .m_kv-txt{
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-  }
-
+ 
   /* ---------- top ---------- */
 
-  /* .top_section_title {
-    position: relative;
-    color: var(--black-color);
-    font-size: 32px;
-    font-weight: bold;
-  }
-
-  .top_section_title::after {
-    content: "";
-    width: 71px;
-    height: 8px;
-    background: var(--primary-color);
-    position: absolute;
-    left: 0;
-    bottom: -16px;
-  } */
-
+ 
 
   /* ---------- menu ---------- */
-.menu-inner{
+
+.menu_inner{
   margin: 0 140px;
 }
 @media screen and (max-width: 1024px) {
-  .menu-inner{
+  .menu_inner{
     margin: 0 16px;
   }
 }
 
 
-.menu-list{
+.menu_list{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -486,89 +464,233 @@ body {
   margin-bottom: 48px;
 }
 @media screen and (max-width: 1024px) {
-  .menu-list{
+  .menu_list{
     gap: 24px;
   }
 }
 @media screen and (max-width: 767px) {
-  .menu-list{
+  .menu_list{
     display: block;
   }
 }
-.menu-item{
+.menu_list-item{
   width: 33%;
   height: 380px;
 }
 @media screen and (max-width: 767px) {
-  .menu-item{
+  .menu_list-item{
     width: 100%;
     margin-bottom: 48px;
     height: auto;
   }
-  .menu-item:last-child{
+  .menu_list-item:last-child{
     margin-bottom: 0;
   }
 }
-.menu-img{
+.menu_img{
   width: 100%;
   height: 100%;
 }
-.menu-txt-box{
+.menu_txt-box{
   display: flex;
   justify-content: space-between;
   padding: 16px;
 }
 @media screen and (max-width: 1160px) {
-  .menu-txt-box{
+  .menu_txt-box{
     display: block;
     padding: 16px 0;
   }
-  .menu-price{
+  .menu_price{
     text-align: right;
   }
 }
-.menu-dtl{
+.menu_dtl{
   font-size: 14px;
   word-break: break-all;
 }
 
-.other-menu-list{
+.menu_other-list{
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 120px;
 }
 @media screen and (max-width: 767px) {
-  .other-menu-list{
+  .menu_other-list{
     flex-wrap: wrap;
 
   }
 }
-.other-menu-item{
+.menu_other-item{
   width: 24%;
   gap: 16px;
 }
 @media screen and (max-width: 767px) {
-  .other-menu-item{
+  .menu_other-item{
     width: 48%;
     height: 100%;
   }
-  .menu-img-box{
+  .menu_img-box{
     width: 100%;
   }
 }
-.other-menu-txt-box{
+.menu_other-txt-box{
   padding: 8px 16px;
 }
-.other-menu-name{
+.menu_other-name{
   font-size: 14px;
   white-space: nowrap;
 }
 
-.other-menu-price{
+.menu_other-price{
   text-align: right;
 }
   /* ---------- news ---------- */
+
+  .news_section-conteiner {
+    width: 343px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .news_section-conteiner {
+      width: 700px;
+    }
+  }
+  
+  @media screen and (min-width: 1080px) {
+    .news_section-conteiner {
+      width: 800px;
+    }
+  }
+  
+  .news_contents {
+    border-top: 0.5px solid #42210B;
+    width: 100%;
+    height: 200px;
+    padding: 24px 16px;
+  }
+  
+  .news_contents-link {
+    width: 100%;
+    height: 100%;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .news_contents {
+      height: 151px;
+    }
+  }
+  
+  @media screen and (min-width: 1080px) {
+    .news_contents {
+      height: 151px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .u_lg-dn {
+      display: none;
+    } 
+  }
+  
+  @media screen and (min-width: 1080px) {
+    .u_lg-dn {
+      display: none;
+    } 
+  }
+  
+  .news_contents:last-of-type {
+    border-bottom: 0.5px solid var(--accent-color); 
+   }
+  
+  .news_contents-date {
+    color: var(--gray-color02);
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .news_contents_sub-date {
+    width: 52px;
+    height: 22px;
+    border: 0.5px solid var(--accent-color);
+    border-radius: 5px;
+    font-size: 10px;
+    color: var(--accent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    transform: translateY(-100%);
+  }
+  
+  .news_contents-ttl {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .news_contents-text {
+    font-size: 12px;
+    color: var(--gray-color);
+  }
+  
+  @media screen and (min-width: 768px) {
+    .news_contents-text {
+      font-size: 12px;
+    }
+  }
+  
+  @media screen and (min-width: 1080px) {
+    .news_contents-text {
+      font-size: 14px;
+  }
+  }
+  
+  .news_pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    gap: 8px;
+  }
+  
+  .news_pagination_numbers {
+    font-weight: bold;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--accent-color);
+    background-color: var(--white-color);
+  }
+  
+  .news_pagination_numbers__current {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+  }
+  
+  .news_pagination_numbers__next {
+    position: relative;
+  }
+  
+  .news_pagination_numbers__next::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    position: absolute;
+    top: 50%;
+    left: 32%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  
   
   /* ---------- news-1 ---------- */
   
@@ -579,5 +701,3 @@ body {
     border-bottom: solid;
   }
 
-
-  
