@@ -47,8 +47,6 @@ window.addEventListener('scroll', function() {
 });
 
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
 
     // m_kv-txtのテキストを一文字ずつ分割してアニメーションを適用
@@ -105,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power2.out",    // 滑らかな動き
     scrollTrigger: {
       trigger: ".m_sec-ttl", // トリガーは各セクションタイトル
-      start: "top 50%",      // 表示タイミング
+      start: "top 80%",      // 表示タイミング
     }
   });
 
@@ -120,16 +118,13 @@ document.addEventListener("DOMContentLoaded", () => {
       start: "top 10%",      // 表示タイミング
     }
   });
-
-
-
-  // ドリンクのメニューリストにアニメーションを追加
+ 
   gsap.utils.toArray('.menu_list-item').forEach((menuItem) => {
     gsap.from(menuItem, {
-      opacity: 0, // 初期は透明
-      y: 50,     // 少し下から上に移動
+      opacity: 0, 
+      y: 50,     
       duration: 1, // アニメーションの時間
-      ease: 'power2.out', // 滑らかな動き
+      ease: 'power2.out', // 動き
       scrollTrigger: {
         trigger: menuItem, // スクロールトリガーの対象
         start: 'top 80%', // トリガー位置
@@ -138,13 +133,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // フードのメニューリストにアニメーションを追加
+ 
   gsap.utils.toArray('.menu_other-item').forEach((menuOtherItem) => {
     gsap.from(menuOtherItem, {
-      opacity: 0, // 初期は透明
-      y: 50,     // 少し下から上に移動
-      duration: 1, // アニメーションの時間
-      ease: 'power2.out', // 滑らかな動き
+      opacity: 0, 
+      y: 50,    
+      duration: 1, 
+      ease: 'power2.out', // 動き
       scrollTrigger: {
         trigger: menuOtherItem, // スクロールトリガーの対象
         start: 'top 80%', // トリガー位置
@@ -155,9 +150,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // フッターロゴやSNSアイコンにもアニメーションを適用
   gsap.from(".l_footer-logo, .l_footer-sns_icon", {
-    opacity: 0,  // 透明から
-    y: 30,       // 下から上に
-    duration: 1, // 1秒かけて
+    opacity: 0,  
+    y: 30,       
+    duration: 1, 
     ease: "power2.out",
     scrollTrigger: {
       trigger: ".l_footer", // フッターが表示されるタイミングで
@@ -167,14 +162,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // フッターのナビゲーションリストにアニメーションを追加
   gsap.from(".l_footer-nav_item", {
-    opacity: 0,        // 透明から
-    y: 20,             // 少し下から上に移動
-    duration: 0.8,     // 0.8秒間かけて表示
-    ease: "power2.out", // 滑らかな動き
+    opacity: 0,       
+    y: 20,             // 下から上に
+    duration: 0.8,     
+    ease: "power2.out", 
     stagger: 0.1,      // 0.1秒間隔で一つずつ順番に表示
     scrollTrigger: {
-      trigger: ".l_footer-nav", // フッターナビゲーションが表示されるタイミング
-      start: "top 90%",         // トリガー位置
+      trigger: ".l_footer-nav", // フッターナビゲーションが表示されるタイミングで
+      start: "top 90%",        
       toggleActions: "play none none none"
     }
   });
@@ -193,10 +188,6 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power2.out"
   }, "-=0.5");  // 0.5秒早く開始して重ねる
 });
-
-
-
-
 
 
 document.addEventListener("DOMContentLoaded", () => {
