@@ -3,8 +3,6 @@ const navigation = document.querySelector(".js_navigation");
 const body = document.querySelector(".js_body");
 const navLinkFlag = document.querySelector("body");
 const navLinks = document.querySelectorAll(".js_nav-link");
-const kvTextElement = document.querySelector(".m_kv-txt");
-const kvText = kvTextElement.textContent; // テキストを取得
 const tl = gsap.timeline();
 
 
@@ -12,7 +10,19 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("is-active");
   navigation.classList.toggle("is-active");
   body.classList.toggle("is-active");
+
+  if (hamburger && navigation && body) {
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("is-active");
+      navigation.classList.toggle("is-active");
+      body.classList.toggle("is-active");
+    });
+  } else {
+    console.error("ハンバーガーメニュー、ナビゲーション、またはボディの要素が見つかりません");
+  }
 });
+
+// ---------------------------------↓モカ先生と実装 ------------------------------------
 
 window.addEventListener("load", () => {
   navLinks.forEach((navLink) => {
@@ -48,18 +58,9 @@ window.addEventListener('scroll', function() {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    // m_kv-txtのテキストを一文字ずつ分割してアニメーションを適用
-    kvTextElement.textContent = ""; // 元のテキストを消す
+ 
 
-    // 一文字ずつspanタグに
-    kvText.split("").forEach((char) => {
-      const span = document.createElement("span");
-      span.textContent = char;
-      kvTextElement.appendChild(span);
-    });
-  
-
-  // ヘッダーロゴとナビゲーションアイテムのアニメーション
+  // ヘッダーロゴとナビのアニメーション
   gsap.from(".l_header-logo", {
     opacity: 0,  
     y: -50,      
@@ -68,93 +69,92 @@ document.addEventListener("DOMContentLoaded", () => {
     delay: 0.2   // ページロード後0.2秒遅延
   });
 
-  // ヘッダーナビゲーションの各アイテムにアニメーションを追加
+  // ヘッダーナビにアニメーションを追加
   gsap.from(".l_header-nav_item", {
-    opacity: 0,        // 初期は透明
-    y: -30,            // 少し上から
-    duration: 0.8,     // 0.8秒かけて表示
-    ease: "power2.out", // 滑らかな動き
-    stagger: 0.1,      // 0.1秒間隔で順番に表示
-    delay: 0.5         // ロゴが表示された後に開始
+    opacity: 0,        
+    y: -30,            
+    duration: 0.8,     
+    ease: "power2.out", 
+    stagger: 0.1,     
+    delay: 0.5         
   });
 
 
-  // 一文字ずつアニメーションを適用
-  gsap.from(kvTextElement.querySelectorAll("span"), {
-    opacity: 0,           // 透明状態から
-    y: 20,                // 少し下から上に
-    scale: 0.8,           // 小さくして拡大
-    duration: 1,          // 1秒間かけてアニメーション
-    ease: "back.out(1.7)", // バウンス効果で立体感
-    stagger: 0.05,        // 0.05秒ずつずれて表示
-    scrollTrigger: {
-      trigger: ".m_kv-txt", // スクロールトリガーの対象
-      start: "top 80%"      // トリガー位置
-    }
-  });
 
-  // セクションタイトル（m_sec-ttl）にアニメーションを追加
+  // セクションタイトルにアニメーションを追加
   gsap.from(".m_sec-ttl", {
-    opacity: 0,            // 透明から
-    y: 50,                 // 下から上に
-    scale: 0.8,            // 少し小さく
-    duration: 0.7,         // 0.8秒で表示
-    ease: "power2.out",    // 滑らかな動き
+    opacity: 0,            
+    y: 50,                 
+    scale: 0.8,            
+    duration: 0.7,         
+    ease: "power2.out",    
     scrollTrigger: {
-      trigger: ".m_sec-ttl", // トリガーは各セクションタイトル
-      start: "top 80%",      // 表示タイミング
+      trigger: ".m_sec-ttl", 
+      start: "top 80%",      
     }
   });
+// 各ページにアニメーション
 
   gsap.from(".news_animetion", {
-    opacity: 0,            // 透明から
-    y: -50,                 // 下から上に
-    scale: 0.9,            // 少し小さく
-    duration: 0.8,         // 0.8秒で表示
-    ease: "power2.out",    // 滑らかな動き
+    opacity: 0,            
+    y: -50,                
+    scale: 0.9,            
+    duration: 0.8,         
+    ease: "power2.out",    
     scrollTrigger: {
-      trigger: ".kv", // トリガーは各セクションタイトル
-      start: "top 0%",      // 表示タイミング
+      trigger: ".kv", 
+      start: "top 0%",      
     }
   });
   
   gsap.from(".contact-main", {
-    opacity: 0,            // 透明から
-    y: -50,                 // 下から上に
-    scale: 0.9,            // 少し小さく
-    duration: 0.8,         // 0.8秒で表示
-    ease: "power2.out",    // 滑らかな動き
+    opacity: 0,           
+    y: -50,                
+    scale: 0.9,            
+    duration: 0.8,         
+    ease: "power2.out",    
     scrollTrigger: {
-      trigger: ".kv", // トリガーは各セクションタイトル
-      start: "top 0%",      // 表示タイミング
+      trigger: ".kv", 
+      start: "top 0%",      
     }
+
+  });
+  gsap.from(".single", {
+    opacity: 0,            
+    y: -50,                 
+    scale: 0.9,            
+    duration: 0.8,         
+    ease: "power2.out",    
   });
   
+// メニューアイテムのアニメーション
 
   gsap.utils.toArray('.menu_list-item').forEach((menuItem) => {
     gsap.from(menuItem, {
       opacity: 0, 
       y: 50,     
-      duration: 1, // アニメーションの時間
-      ease: 'power2.out', // 動き
+      duration: 1, 
+      ease: 'power2.out', 
       scrollTrigger: {
-        trigger: menuItem, // スクロールトリガーの対象
-        start: 'top 80%', // トリガー位置
-        toggleActions: 'play none none none' // トリガー時のアクション
+        trigger: menuItem, 
+        start: 'top 80%', 
+        toggleActions: 'play none none none' 
       }
     });
   });
+
+  // メニューアイテムのアニメーション
  
   gsap.utils.toArray('.menu_other-item').forEach((menuOtherItem) => {
     gsap.from(menuOtherItem, {
       opacity: 0, 
       y: 50,    
       duration: 1, 
-      ease: 'power2.out', // 動き
+      ease: 'power2.out', 
       scrollTrigger: {
-        trigger: menuOtherItem, // スクロールトリガーの対象
-        start: 'top 80%', // トリガー位置
-        toggleActions: 'play none none none' // トリガー時のアクション
+        trigger: menuOtherItem, 
+        start: 'top 80%', 
+        toggleActions: 'play none none none' 
       }
     });
   });
@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power2.out", 
     stagger: 0.1,      // 0.1秒間隔で一つずつ順番に表示
     scrollTrigger: {
-      trigger: ".l_footer-nav", // フッターナビゲーションが表示されるタイミングで
+      trigger: ".l_footer-nav", // フッターナビが表示されるタイミングで
       start: "top 90%",        
       toggleActions: "play none none none"
     }
@@ -205,9 +205,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector(".l_header");
   const footer = document.querySelector(".l_footer");
 
-  // 要素が正しく取得されているか確認
-  console.log(header); // ヘッダーの要素が表示されるか確認
-  console.log(footer); // フッターの要素が表示されるか確認
 
   if (header && footer) {
     // スクロール時にフッターの位置を確認し、ヘッダーをGSAPで表示/非表示にする処理
@@ -236,4 +233,92 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// オープニングアニメーション
+// DOMContentLoadedイベントが発生したらアニメーション開始
+$(document).ready(function() {
+  const opening = $('.js_opening');
+  const openingText = $('.js_opening_txt');
+  const openingLogo = $('.m_opening_logo');
+
+  // オープニングアニメーションを実行する関数
+  function runOpeningAnimation() {
+    // 開始時点でオープニングの透明度をゼロに設定
+    gsap.set(opening, { opacity: 1 });
+    gsap.set(openingText, { opacity: 0, y: 20 });
+    gsap.set(openingLogo, { opacity: 0, scale: 0.8 });
+
+    const tl = gsap.timeline({
+      onComplete: () => {
+        // アニメーション完了後、オープニング要素を非表示に
+        gsap.to(opening, { opacity: 0, display: 'none', duration: 0.5 });
+      }
+    });
+
+    // テキストをフェードインしつつ少し上にスライドさせる
+    tl.to(openingText, {
+      opacity: 1,
+      y: 0,
+      duration: 1.5,
+      ease: 'power3.out'
+    });
+
+    // ロゴをスケールアップしながらフェードイン
+    tl.to(openingLogo, {
+      opacity: 1,
+      scale: 1,
+      duration: 1.2,
+      ease: 'back.out(1.7)'
+    }, '-=1'); // テキストアニメーションと少し重ねる
+
+    // 一定時間表示してからフェードアウト
+    tl.to(opening, {
+      delay: 1,
+      opacity: 0,
+      duration: 1.5,
+      ease: 'power3.inOut'
+    });
+  }
+
+  // 初回アクセスかどうかを確認する
+  function checkFirstVisit() {
+    // sessionStorageを確認
+    if (!sessionStorage.getItem('hasVisited')) {
+      // 初回アクセス時、オープニングアニメーションを実行
+      sessionStorage.setItem('hasVisited', 'true'); // フラグをセット
+      runOpeningAnimation(); // オープニングアニメーションを実行
+    } else {
+      // 2回目以降のアクセス時はオープニングアニメーションをスキップ
+      opening.hide();  // オープニング要素を非表示に
+    }
+  }
+
+  // 初期化
+  checkFirstVisit();
+});
+
+
+  
+
+// スワイパー
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+ 
+    const swiper = new Swiper('.js_slideshow', {
+      loop: true,            // ループさせる
+      autoplay: {
+        delay: 3000,         // 自動再生の遅延時間（ミリ秒）
+        disableOnInteraction: false, // ユーザー操作後も自動再生を継続
+      },
+      pagination: {
+        el: '.swiper-pagination', // ページネーションを有効に
+        clickable: true,          // ページネーションをクリック可能に
+      },
+      navigation: {
+      },
+      effect: 'fade',       // フェード効果（好みに応じて変更可能）
+      speed: 1000,          // アニメーション速度（1秒）
+    });
+  });
 

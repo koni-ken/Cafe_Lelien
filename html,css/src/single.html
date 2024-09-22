@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>News</title>
+<meta name="description" content="安らぎへとあなたを繋ぐ" />
+<meta name="format-detection" content="telephone=no" />
+
+<!-- favicon/web-clip-icon -->
+<link rel="icon" href="favicon.ico" type="image/ico" />
+<link rel="icon" href="favicon.png" type="image/png" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="webclip.png" />
+
+ <!-- ogp -->
+<meta property="og:site_name" content="LeLien" />
+<meta property="og:url" content="サイトのURL（絶対パス）" />
+<meta property="og:type" content="website(Webサイトのトップページ) or article（記事ページなどトップページ以外のページ） or blog（ブログのトップページ）" />
+<meta property="og:title" content="LeLien" />
+<meta property="og:description" content="安らぎへとあなたを繋ぐ" />
+<meta property="og:image" content="OGP画像のURL（絶対ぱす）推奨サイズは1200*630" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="fb:app_id" content="AppID">
+
+<!-- twitter専用の出力いる？？？ -->
+<meta name="twitter:card" content="summary_large_image or summary" />
+<meta name="twitter:site" content="@twitter_id" />
+<meta name="twitter:description" content="安らぎへとあなたを繋ぐ" />
+<meta name="twitter:image:src" content="URL" />
+
+ <!-- google fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+ <!-- css -->
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/style.css" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/main.js" defer></script>
+
+</head>
+
+
+  <body class="news js_body">
+
+    <header class="l_header">
+      <h1 class="l_header-logo">
+        <a href="./index.html" class="l_header-logo_link">
+             <div class="l_header-logo_thumb-wrapper">
+                <img src="./img/logo.svg" alt="ロゴ" width="500" height="500" class="l_header_thumb">
+              </div>
+        </a>
+    </h1>
+    
+      <nav class="l_header-nav js_navigation">
+        <ul class="l_header-nav_list">
+          <li class="l_header-nav_item">
+            <a href="index.html" class="l_header-nav_link js_nav-link js_nav-link__top">Top</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="concept.html" class="l_header-nav_link ">Consept</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="menu.html" class="l_header-nav_link js_nav-link js_nav-link__menu">Menu</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="news.html" class="l_header-nav_link js_nav-link js_nav-link__news">News</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="" class="l_header-nav_link "> Access</a>
+</li>          <li class="l_header-nav_item">
+            <a href="contact.html" class="l_header-nav_link js_nav-link js_nav-link__contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+        
+      <button class="m_hamburger js_hamburger">
+        <span class="m_hamburger-bar"></span>
+        <span class="m_hamburger-bar"></span>
+        <span class="m_hamburger-bar"></span>
+      </button>
+    </header>
+
+    <main class="main">
+      <article class="single">
+        <div class="l_container-sm">
+        <div class="l_contents">
+
+        <div class="single-meta">
+          <time class="single-meta_date">2024.11.15</time>
+          <a href="category.html" class="single-meta_cat">event</a>
+        </div>
+        <!-- /.single-meta -->
+     
+        <h1 class="single_ttl">バリスタ体験！<br class="u_lg-dn">ワークショップのお知らせ</h1>
+        <div class="single_thumb-wrapper">
+          <img
+            width="1600"
+            height="896"
+            src="img/news_img.jpg"
+            alt="coffee"
+            class="single_thumb"
+          />
+        </div>
+        <!-- /.single_thumb-wrapper -->
+      
+        <div class="single_content">
+          <p class="single_text">当店では、日々のコーヒータイムをさらに豊かにする特別なワークショップを開催します。カフェの雰囲気を楽しみながら、新しいスキルを身に付けてみませんか？ 
+            ハンドドリップコーヒー体験 プロのバリスタが教えるハンドドリップコーヒーの基本。美味しい一杯を淹れるためのコツを丁寧にお伝えします。初心者の方も大歓迎です！</p>
+            
+            <h2 class="single_sub-ttl">開催日時と場所</h2>
+          <ul class="single_list">
+            <li class="single_list-text">日時：11月30日（土）午後14時〜</li>
+            <li class="single_list-text">場所：当店内の特設スペース</li>
+            <li class="single_list-text">参加費：2000円<span class=fz_sm>（コーヒー豆とエプロン付き）</span></li>
+            <li class="single_list-text">定員：5名</li>
+          </ul>
+         
+          <h2 class="single_sub-ttl">参加方法</h2>
+          <p class="single_text">ご参加ご希望の方は、当店のウェブサイトまたは店頭にてお申し込みください。
+            <br class="u_lg-dn">コーヒーがお好きな方ならどなたでも参加可能です。</p>
+         
+            <h2 class="single_sub-ttl">特典</h2>
+          <p class="single_text">ワークショップにご参加いただいた方には、次回来店時に使えるコーヒー無料券をプレゼント。
+            また、体験中に使用する豆や道具は特別割引価格でお買い求めいただけます。</p>
+          <p class="single_text">プロのバリスタが教える実践的な技術を楽しく学べるこのワークショップ、
+            コーヒー愛好家の皆様にぴったりです！<br class="u_lg-dn">定員になり次第、応募は締め切ります。
+            ご興味のある方はお気軽にご連絡ください！<br class="u_lg-dn">皆様のご参加をこころよりお待ちしております。</p>
+
+            <div class="single_news-btn__wrapper">
+              <a href="news.html" class="single_news-btn single_news-btn__arrow">
+                News一覧
+              </a>
+          
+
+        </div>
+        <!-- /.single_content -->
+      </div>
+      </div>
+      </article>
+
+          <!-- footer -->
+    <footer class="l_footer">
+      <div class="l_footer-logo">
+      <a href="./index.html" class="l_footer-logo_link">
+              <div class="l_footer-logo_thumb-wrapper">
+              <img src="img/logo_white.svg" alt="ロゴ" class="l_footer_thumb">
+              </div>
+      </a>
+      </div>
+  
+      <div class="l_footer-nav">
+      <ul class="l_footer-nav_list">
+          <li class="l_footer-nav_item">
+          <a href="index.html" class="l_footer-nav_link js_nav-link js_nav-link__top">Top</a>
+          </li>
+          <li class="l_footer-nav_item">
+          <a href="concept.html" class="l_footer-nav_link ">Consept</a>
+          </li>
+          <li class="l_footer-nav_item">
+          <a href="menu.html" class="l_footer-nav_link js_nav-link js_nav-link__menu">Menu</a>
+          </li>
+          <li class="l_footer-nav_item">
+          <a href="news.html" class="l_footer-nav_link js_nav-link js_nav-link__news">News</a>
+          </li>
+          <li class="l_footer-nav_item">
+          <a href="#access" class="l_footer-nav_link">Access</a>
+</li>          <li class="l_footer-nav_item">
+          <a href="contact.html" class="l_footer-nav_link js_nav-link js_nav-link__contact">Contact</a>
+          </li>
+      </ul>
+      </div>
+  <div class="l_footer-sns-icon_wrapper">
+      <a href="" class="l_footer-sns_link l_footer-nav_link"><img src="img/icon_instagram(white).png" alt="instagram" width="20" height="20" class="l_footer-sns_icon"></a>
+      </div>
+  <p class="l_footer-copyright">
+      <small class="l_footer-copyright_txt">&copy; 2024 LeLien.</small>
+      </p>
+  </footer>
+
+    </main>
+  </body>
+</html>
