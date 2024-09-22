@@ -12,7 +12,6 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("is-active");
   navigation.classList.toggle("is-active");
   body.classList.toggle("is-active");
-
 });
 
 window.addEventListener("load", () => {
@@ -115,10 +114,23 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power2.out",    // 滑らかな動き
     scrollTrigger: {
       trigger: ".kv", // トリガーは各セクションタイトル
-      start: "top 10%",      // 表示タイミング
+      start: "top 0%",      // 表示タイミング
     }
   });
- 
+  
+  gsap.from(".contact-main", {
+    opacity: 0,            // 透明から
+    y: -50,                 // 下から上に
+    scale: 0.9,            // 少し小さく
+    duration: 0.8,         // 0.8秒で表示
+    ease: "power2.out",    // 滑らかな動き
+    scrollTrigger: {
+      trigger: ".kv", // トリガーは各セクションタイトル
+      start: "top 0%",      // 表示タイミング
+    }
+  });
+  
+
   gsap.utils.toArray('.menu_list-item').forEach((menuItem) => {
     gsap.from(menuItem, {
       opacity: 0, 
@@ -132,7 +144,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
-
  
   gsap.utils.toArray('.menu_other-item').forEach((menuOtherItem) => {
     gsap.from(menuOtherItem, {

@@ -1,102 +1,422 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>LeLien</title>
-<meta name="description" content="安らぎへとあなたを繋ぐ" />
-<meta name="format-detection" content="telephone=no" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Lelian</title>
+    <meta name="description" content="安らぎへとあなたを繋ぐ" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <!-- favicon/web-clip-icon -->
+    <link rel="icon" href="favicon.ico" type="image/ico" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="webclip.png" />
+    
+     <!-- ogp -->
+    <meta property="og:site_name" content="LeLien" />
+    <meta property="og:url" content="サイトのURL（絶対パス）" />
+    <meta property="og:type" content="website(Webサイトのトップページ) or article（記事ページなどトップページ以外のページ） or blog（ブログのトップページ）" />
+    <meta property="og:title" content="LeLien" />
+    <meta property="og:description" content="安らぎへとあなたを繋ぐ" />
+    <meta property="og:image" content="OGP画像のURL（絶対ぱす）推奨サイズは1200*630" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="fb:app_id" content="AppID">
+    
+    <!-- twitter専用の出力いる？？？ -->
+    <meta name="twitter:card" content="summary_large_image or summary" />
+    <meta name="twitter:site" content="@twitter_id" />
+    <meta name="twitter:description" content="安らぎへとあなたを繋ぐ" />
+    <meta name="twitter:image:src" content="URL" />
+    
+     <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"rel="stylesheet" />
+    
+     <!-- css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js" defer></script>
+    </head>
 
-<!-- favicon/web-clip-icon -->
-<link rel="icon" href="favicon.ico" type="image/ico" />
-<link rel="icon" href="favicon.png" type="image/png" />
-<link rel="icon" href="favicon.svg" type="image/svg+xml" />
-<link rel="apple-touch-icon" href="webclip.png" />
-
- <!-- ogp -->
-<meta property="og:site_name" content="LeLien" />
-<meta property="og:url" content="サイトのURL（絶対パス）" />
-<meta property="og:type" content="website(Webサイトのトップページ) or article（記事ページなどトップページ以外のページ） or blog（ブログのトップページ）" />
-<meta property="og:title" content="LeLien" />
-<meta property="og:description" content="安らぎへとあなたを繋ぐ" />
-<meta property="og:image" content="OGP画像のURL（絶対ぱす）推奨サイズは1200*630" />
-<meta property="og:locale" content="ja_JP" />
-<meta property="fb:app_id" content="AppID">
-
-<!-- twitter専用の出力いる？？？ -->
-<meta name="twitter:card" content="summary_large_image or summary" />
-<meta name="twitter:site" content="@twitter_id" />
-<meta name="twitter:description" content="安らぎへとあなたを繋ぐ" />
-<meta name="twitter:image:src" content="URL" />
-
- <!-- google fonts -->
- <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
- <!-- css -->
-<link rel="stylesheet" href="css/reset.css" />
-<link rel="stylesheet" href="css/style.css" />
-
- <!-- js -->
-<script src="js/main.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
 
 
-</head>
 
-  <body class="top">
- <!-- header -->
-
- <header class="l_header">
-  <h1 class="l_header-logo">
-    <a href="./index.html" class="l_header-logo_link">
-         <div class="l_header-logo_thumb-wrapper">
-            <img src="./img/logo.svg" alt="ロゴ" width="500" height="500" class="l_header_thumb">
+    <body class="js_body top js_opening">
+      <div class="m_opening js_opening">
+        <div class="top_kv-box">
+        <p class="m_opening_txt js_opening_txt">やすらぎへと繋ぐ場所</p>
+          <div class="m_opening_logo">
+            <?xml version="1.0" encoding="utf-8"?>
+  <!-- Generator: Adobe Illustrator 28.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 512 188" style="enable-background:new 0 0 512 188;" xml:space="preserve">
+  <style type="text/css">
+    .st0{fill:#42210B;}
+    .st1{fill:none;stroke:#000000;stroke-miterlimit:10;}
+    .st2{fill:none;stroke:#FFFFFF;stroke-width:16;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+  </style>
+  <g id="logo">
+    <g>
+      <path class="st0" d="M208.31,92.27c3.34,0,5.01-1.17,5.01-3.5c0-2.42-1.67-3.63-5.01-3.63c-3.25,0-4.88,1.21-4.88,3.63
+        C203.43,91.1,205.06,92.27,208.31,92.27z"/>
+      <path class="st0" d="M320.2,97.53c-0.33,0-0.63,0.04-0.88,0.13c-8.76,6.68-13.85,10.43-15.27,11.26
+        c-7.43,5.01-12.73,7.51-15.89,7.51c-4.26,0-6.38-1.54-6.38-4.63c0-1.42,0.33-2.82,1-4.19c0.67-1.38,1.58-2.82,2.75-4.32
+        c2.59-2.92,3.88-4.46,3.88-4.63c-0.25-1.08-0.58-1.63-1-1.63c-4.59,0-14.81,5.42-30.66,16.27c0.67-0.67,1.44-1.54,2.32-2.63
+        c0.88-1.08,1.94-2.42,3.19-4c2.67-3.67,4-5.8,4-6.38c0-2.17-1.42-3.25-4.26-3.25c-0.36,0.04-0.8,0.18-1.3,0.4
+        c-0.03-0.01-0.05-0.02-0.08-0.02c-0.33,0-0.63,0.04-0.88,0.13c-4.76,3.59-8.51,6.38-11.26,8.39c-2.75,2-4.55,3.3-5.38,3.88
+        c-8.6,5.59-15.06,8.38-19.4,8.38c-1.67,0-3.21-0.46-4.63-1.38c-1.6-1.22-2.42-2.72-2.49-4.49c0.62-0.46,1.35-1.02,2.17-1.67
+        c1.13-0.63,2.18-1.27,3.14-1.91c1.54-1.04,2.98-2.06,4.32-3.07c0.92-0.67,1.73-1.27,2.44-1.81c0.71-0.54,1.48-1.23,2.32-2.07
+        c0.92-0.92,1.52-1.71,1.82-2.38c0.29-0.67,0.44-1.38,0.44-2.13c0-0.92-0.46-1.75-1.38-2.5c-0.84-0.83-1.8-1.25-2.88-1.25
+        c-3.09,0-6.92,2.38-11.51,7.13c-3.56,4.12-5.61,7.8-6.19,11.05c-5.77,3.64-9.6,5.47-11.45,5.47c-3.09-0.08-4.63-1.79-4.63-5.13
+        c0.17-2.67,1.42-5.51,3.76-8.51c2.67-3,4-4.84,4-5.51c0-0.75-0.54-1.13-1.63-1.13c-2.25,0.5-4.84,2.67-7.76,6.51
+        c-3.25,4.17-4.88,7.8-4.88,10.89c0.17,2,1.21,3.67,3.13,5.01c2.09,1.42,4.3,2.13,6.63,2.13c3.13,0,7.42-1.8,12.88-5.41
+        c0.8,4.27,3.63,6.41,8.52,6.41c6.76-0.17,14.31-3.05,22.65-8.63c1.75-1.17,4.13-2.92,7.13-5.26c2.34-1.82,5.09-4.05,8.25-6.69
+        c0.07,0.2,0.16,0.39,0.26,0.55c-0.42,0.67-1.15,1.77-2.19,3.32c-1.04,1.55-2.44,3.61-4.19,6.19c-1.67,2.34-2.86,4.17-3.57,5.51
+        c-0.71,1.33-1.06,2.29-1.06,2.88c0,0.33,0.25,0.63,0.75,0.88c0.58,0.33,0.92,0.5,1,0.5c0.42,0,3.09-1.63,8.01-4.88
+        c3.5-2.34,6.9-4.48,10.2-6.45c3.29-1.96,6.53-3.86,9.7-5.69c-0.5,1.92-0.86,3.57-1.06,4.94c-0.21,1.38-0.31,2.52-0.31,3.44
+        c0,5.01,2.38,7.51,7.13,7.51c5.51,0,12.06-2.58,19.65-7.76c3.25-2.17,8.93-6.59,17.02-13.27c0.33-0.42,0.5-0.88,0.5-1.38
+        C320.61,97.74,320.45,97.53,320.2,97.53z M217.95,107.79c0.17-0.92,0.58-1.96,1.25-3.13c0.67-1.17,1.42-2.21,2.25-3.13
+        c1.17-1.33,2.25-2.32,3.25-2.94c1-0.63,1.8-0.94,2.38-0.94c1.09,0,1.63,0.33,1.63,1c0,0.71-0.32,1.5-0.96,2.37
+        c-3.48,2.53-6.65,4.78-9.48,6.71C218.13,107.77,218.02,107.79,217.95,107.79z"/>
+    </g>
+    <path class="st0" d="M392.22,143.59c-24.08-2-42.52-12.76-72.09-12.43c-65.31,0.73-97.5,20.42-169.74-10.52l0.06-0.06
+      c-0.21-0.08-0.41-0.15-0.63-0.23c18.95-21.12,35.79-57.89,60-70.27c1.09-0.88,3.42-2.68,3.5-3.68
+      c-10.48-12.54-56.09,63.49-68.06,72.95C23.34,67.08-6.21,161.77,61.74,162.4c33.24-0.22,56.71-12.21,82.02-35.15
+      c76.83,32.65,107.24,14.51,179.05,11.04c24.82-1.2,45.11,7.27,68.62,9.23c25.03,2.09,60.92-6.05,86.38-23
+      c0.81-0.67,1.22-1.06,1.22-1.15C439.4,141.26,414.37,145.43,392.22,143.59z M68.14,159.4c-16.31-0.04-36.21-4.88-37.95-20.78
+      c4.7-38.36,47.8-31,79.59-22.4l30.55,9.39C117.58,146.66,96.96,159.11,68.14,159.4z"/>
+    <g>
+      <path class="st0" d="M499.64,80.38"/>
+      <g>
+        <path class="st1" d="M499.64,80.38"/>
+      </g>
+    </g>
+    <path class="st0" d="M485.36,120.57c-0.68,0-1.33-0.19-1.86-0.6c-1.6-1.22-1.64-3.88-0.07-5.95c1.56-2.06,4.14-2.75,5.74-1.53
+      c1.6,1.22,1.64,3.88,0.07,5.95C488.2,119.81,486.71,120.57,485.36,120.57z M484.3,119.26c1.16,0.68,2.95,0.07,4.1-1.45
+      c1.13-1.48,1.26-3.31,0.36-4.27C487.56,115.73,486.22,117.95,484.3,119.26z M487.29,112.92c-1.02,0-2.2,0.63-3.03,1.73
+      c-0.97,1.28-1.2,2.82-0.67,3.83c1.81-1.17,3.12-3.34,4.3-5.49C487.69,112.95,487.49,112.92,487.29,112.92z M490.5,108.24
+      c-0.52,0-1.04-0.11-1.52-0.33c-1.13-0.52-1.91-1.57-2.21-2.97c-0.29-1.34-0.09-2.85,0.55-4.25c1.36-2.93,4.3-4.47,6.57-3.43v0
+      c1.13,0.52,1.91,1.57,2.21,2.97c0.29,1.34,0.09,2.85-0.55,4.25C494.49,106.8,492.43,108.24,490.5,108.24z M489.48,106.99
+      c1.74,0.75,4.02-0.56,5.13-2.94c0.55-1.19,0.72-2.47,0.48-3.59c-0.21-0.98-0.71-1.73-1.42-2.14
+      C492.73,101.52,491.63,104.81,489.48,106.99z M492.36,97.98c-1.53,0-3.19,1.22-4.09,3.15c-0.55,1.19-0.72,2.47-0.48,3.59
+      c0.14,0.67,0.43,1.24,0.82,1.66c2.07-2.02,3.14-5.25,4.06-8.39C492.57,97.98,492.47,97.98,492.36,97.98z"/>
+    <g>
+      <path class="st0" d="M96.54,91.45h5.78v-35.6h-5.78v-0.73h16.76v0.73h-5.78v35.6h9.26c3.05,0,5.45-0.95,7.18-2.86
+        c1.73-1.91,3-4.51,3.8-7.81h0.57v11.4h-31.8V91.45z"/>
+      <path class="st0" d="M138.22,79.27c0,0.35-0.01,0.7-0.03,1.07c-0.02,0.36-0.03,0.82-0.03,1.38c0,1.14,0.07,2.34,0.21,3.59
+        c0.14,1.25,0.44,2.38,0.91,3.38s1.16,1.84,2.08,2.5c0.92,0.66,2.14,0.99,3.67,0.99s2.78-0.23,3.77-0.68
+        c0.99-0.45,1.77-1,2.34-1.64s1-1.29,1.28-1.95c0.28-0.66,0.49-1.2,0.62-1.61l0.78,0.16c-0.1,0.38-0.3,0.93-0.6,1.64
+        c-0.3,0.71-0.76,1.42-1.41,2.13c-0.64,0.71-1.51,1.34-2.6,1.87s-2.51,0.81-4.24,0.81c-1.74,0-3.34-0.28-4.81-0.83
+        s-2.75-1.35-3.82-2.39c-1.08-1.04-1.91-2.28-2.5-3.72c-0.59-1.44-0.89-3.05-0.89-4.81c0-1.53,0.3-3.01,0.91-4.45
+        c0.61-1.44,1.44-2.71,2.5-3.83c1.06-1.11,2.3-2,3.72-2.68c1.42-0.68,2.95-1.02,4.58-1.02c0.97,0,2.01,0.18,3.12,0.52
+        s2.14,0.91,3.1,1.69c0.95,0.78,1.75,1.81,2.39,3.1c0.64,1.29,0.96,2.88,0.96,4.79H138.22z M148.94,78.54
+        c0.07-0.48,0.1-0.94,0.1-1.35s0-0.85,0-1.3c0-1.18-0.11-2.15-0.34-2.91c-0.23-0.76-0.54-1.37-0.94-1.82
+        c-0.4-0.45-0.89-0.77-1.46-0.96c-0.57-0.19-1.19-0.29-1.85-0.29c-1.18,0-2.15,0.23-2.91,0.7c-0.76,0.47-1.37,1.1-1.82,1.9
+        c-0.45,0.8-0.79,1.72-1.01,2.76c-0.23,1.04-0.37,2.13-0.44,3.28H148.94z"/>
+    </g>
+  </g>
+  <mask id="mask-wrapper"><g id="mask">
+    <path class="st2" d="M96.5,55.5c4.75-1.2,20.34,0.45,17,0c-13.48-1.8-7.78,19.03-7.94,31.98c-0.06,5.02-5.85,4.13-7.06,4.02
+      c11,1,20.74-0.12,26-1c6-1,3.12-6.19,0.16-11.25c3.91,2.72,10.1,2.4,14.84,2.25c6.83-0.22,16-5,14-7
+      c-19.43-19.43-24.31,23.26-4.91,18.78c21.5-20.78,40.3-42.71,69.91-51.78c-38.65,20.03-53.66,65.92-86,92c-4.62,3.73-8,10-14,13
+      c-114,57-121.1-66.58-11-36c18,5,35.18,11.54,58,21c41.1,17.04,81.56,9.62,124.23,4.3c21.02-2.62,42.3-1.14,62.88,3.87
+      c40.65,9.91,89.24,7.26,125.89-15.18c-80.77-1.49-152.41-59.97-237-53c-9.13,1.56-22.52,11.23-31.88,12.87
+      C206,85,210.75,87.95,210,89c-0.63,0.89-4.76,0.28-5.37,1.18c-15.18,22.23-23.38,47.08,28.87,7.32
+      c-6.63-9.46-17.03,1.47-19.84,12.06c-1.35,5.07,2.65,9.97,7.88,9.61c14.56-1,35.19-17.06,40.96-19.67
+      c4.21-1.9,0.82,7.79-13.85,20.1c10.85-9.1,24.22-11.59,37.86-21.95c-9.01,6.85-8.86,16.84-5.01,19.85c3.85,3.01,13.96,0.29,21-7
+      c6.55-4.45,11.1-11.97,19-12c8.92-0.04,19.63,7.18,28.26,9.53c17.16,7.93,116.26,28.95,138.24,6.97c3.5-3.5,3.5-6.5,5.5-16.5
+      c0.08-0.38-3.67-2.16-6.5,3.5"/>
+  </g></mask>
+  </svg>
+            
           </div>
-  </a>
-</h1>
+        </div>
+      </div>
+   <!-- header -->
+   <header class="l_header">
+    <h1 class="l_header-logo">
+      <a href="./index.html" class="l_header-logo_link">
+           <div class="l_header-logo_thumb-wrapper">
+              <img src="./img/logo.svg" alt="ロゴ" width="500" height="500" class="l_header_thumb">
+            </div>
+      </a>
+  </h1>
+  
+    <nav class="l_header-nav js_navigation">
+      <ul class="l_header-nav_list">
+        <li class="l_header-nav_item">
+          <a href="index.html" class="l_header-nav_link js_nav-link js_nav-link__top">Top</a>
+        </li>
+        <li class="l_header-nav_item">
+          <a href="concept.html" class="l_header-nav_link ">Consept</a>
+        </li>
+        <li class="l_header-nav_item">
+          <a href="menu.html" class="l_header-nav_link js_nav-link js_nav-link__menu">Menu</a>
+        </li>
+        <li class="l_header-nav_item">
+          <a href="news.html" class="l_header-nav_link js_nav-link js_nav-link__news">News</a>
+        </li>
+        <li class="l_header-nav_item">
+          <a href="" class="l_header-nav_link "> Access</a>
+        </li>
+        </li>
+        <li class="l_header-nav_item">
+          <a href="contact.html" class="l_header-nav_link js_nav-link js_nav-link__contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+      
+    <button class="m_hamburger js_hamburger">
+      <span class="m_hamburger-bar"></span>
+      <span class="m_hamburger-bar"></span>
+      <span class="m_hamburger-bar"></span>
+    </button>
+  </header>
 
-  <nav class="l_header-nav js_navigation">
-    <ul class="l_header-nav_list">
-      <li class="l_header-nav_item">
-        <a href="index.html" class="l_header-nav_link js_nav-link js_nav-link__top">Top</a>
-      </li>
-      <li class="l_header-nav_item">
-        <a href="concept.html" class="l_header-nav_link ">Consept</a>
-      </li>
-      <li class="l_header-nav_item">
-        <a href="menuhtml" class="l_header-nav_link js_nav-link js_nav-link__menu">Menu</a>
-      </li>
-      <li class="l_header-nav_item">
-        <a href="news.html" class="l_header-nav_link js_nav-link js_nav-link__news">News</a>
-      </li>
-      <li class="l_header-nav_item">
-        <a href="" class="l_header-nav_link "> Access</a>
-      </li>
-      </li>
-      <li class="l_header-nav_item">
-        <a href="contact.html" class="l_header-nav_link js_nav-link js_nav-link__contact">Contact</a>
-      </li>
-    </ul>
-  </nav>
-
-<!-- snsアイコンを追従させる? -->
-<!-- <div class="l_header-sns-icon_wrapper">
-<a href="" class="l_header-sns_link"><img src="" alt="instagram" width="20" height="20" class="l_header-sns_icon"></a>
-</div> -->
-
-  <button class="m_hamburger js_hamburger">
-    <span class="m_hamburger-bar"></span>
-    <span class="m_hamburger-bar"></span>
-    <span class="m_hamburger-bar"></span>
-  </button>
-</header>
-
-  <!-- footer -->
+  
+      <div class="top_kv">
+        <div class="top_kv_contents l_container">
+         
+  
+          <div class="top_kv-scroll-down">
+            <p class="top_kv-scroll-down_txt">scroll</p>
+            <div class="top_kv-scroll-down_arrow"></div>
+          </div>
+        </div>
+  
+            <div class="top_kv-box">
+              <p class="top_kv_copy">やすらぎへと繋ぐ場所</p>
+                <div class="top_kv-img-wrapper">
+                  <img src="img/logo_white.svg" alt="ロゴ" width="200" height="75" class="top_kv-img">
+                </div>
+            </div>
+  
+            <div class="top_kv-slideshow js_slideshow">
+              <div class="swiper-wrapper">
+                <div class="top_kv-slideshow_slide swiper-slide">
+                  <img
+                    class="top_kv-slideshow_slide_img"
+                    src="img/top_kv.jpg"
+                    alt="店内風景" width="375" height="667"
+                  />
+                </div>
+                <!-- /.top_kv-slideshow_slide -->
+                <div class="top_kv-slideshow_slide swiper-slide">
+                  <img
+                    class="top_kv-slideshow_slide_img"
+                    src="img/pixta_97170988_M.jpg"
+                    alt="" width="2897" height="1917"
+                  />
+                </div>
+                <!-- /.top_kv-slideshow_slide -->
+                <div class="top_kv-slideshow_slide swiper-slide">
+                  <img
+                    class="top_kv-slideshow_slide_img"
+                    src="img/news_kv.jpg"
+                    alt="" width="4480" height="6720"
+                  />
+                </div>
+                <!-- /.top_kv-slideshow_slide -->
+              </div>
+              <!-- /.swiper-wrapper -->
+            </div>
+      </div>
+  
+  <main class="top_main">
+    <!-- top_concept -->
+    <section class="top_concept">
+      <div class="l_container js_problem-trigger">
+        <div class="l_contents">
+          <h2 class="top_section_title">Concept</h2>
+          <div class="top_concept_body">
+            <div class="top_concept_contents">
+                <div class="top_concept_txts">
+                  <h3 class="top_concept_desc js_problem">安らぎへとあなたを繋ぐ</h3>
+                    <p class="top_concept_desc-txt js_problem">
+                      老舗喫茶店のような確かな味と安らぎでお客様に満足していただきたい。<br>
+                      新たな挑戦をし続けながら、いつでも変わらぬ安心感を。
+                    </p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  
+    <!-- top_menu -->
+    <section class="top_menu">
+      <div class="l_container js_problem-trigger">
+        <div class="l_contents js_problem">
+          <h2 class="top_section_title">Menu</h2>
+          <div class="top_menu_body">
+            <div class="top_menu_contents">
+              <div class="top_menu_wrap">
+                <div class="top_menu_item">
+                  <div class="top_menu_img-wrap">
+                    <img src="img/menu_drink01.jpg" alt="カフェラテ" width="662" height="458" class="top_menu-img">
+                  </div>
+                  <div class="top_menu-txts">
+                    <p class="top_menu-name">カフェラテ</p>
+                    <p class="top_menu-price">¥600</p>
+                  </div>
+                </div>
+                <div class="top_menu_item">
+                  <div class="top_menu_img-wrap">
+                    <img src="img/menu_food02.jpg" alt="喫茶店のプリン" width="662" height="458" class="top_menu-img">
+                  </div>
+                  <div class="top_menu-txts">
+                    <p class="top_menu-name">喫茶店のプリン</p>
+                    <p class="top_menu-price">¥500</p>
+                  </div>
+                </div>
+                <div class="top_menu_item">
+                  <div class="top_menu_img-wrap">
+                    <img src="img/menu_food03.jpg" alt="季節のケーキセット" width="678" height="474" class="top_menu-img">
+                  </div>
+                  <div class="top_menu-txts">
+                    <p class="top_menu-name">季節のケーキセット</p>
+                    <p class="top_menu-price">¥900</p>
+                  </div>
+                </div>
+              </div>
+              <div class="m_btn-wrapper top_menu_btn-wrapper">
+                <a href="" class="m_btn top_btn__more">more</a>
+                <!-- /.m_btn-wrapper -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- top_news -->
+    <section class="top_news">
+      <div class="l_contents">
+        <div class="l_container js_problem-trigger">
+          <h2 class="top_section_title js_problem">News</h2>
+            <div class="top_news_body js_problem">
+              <div class="top_news_contents">
+                <p class="top_news_contents-date">2024.11.15
+                  <span class="top_news_contents_tag">event</span>
+                </p>
+                <div class="top_news_contents-ttl-wrapper">
+                  <p class="top_news_contents-ttl">
+                    ワークショップ開催！</p>
+                    <a href="./detail.html" class="top_news-link"></a>
+                </div>
+              </div>
+              <div class="top_news_contents">
+                <p class="top_news_contents-date">2024.9.28
+                  <span class="top_news_contents_tag">info</span></p>
+                <div class="top_news_contents-ttl-wrapper">
+                  <p class="top_news_contents-ttl">臨時休業のお知らせ</p>
+                <a href="./detail.html" class="top_news-link"></a></button>
+                </div>
+              </div>
+  
+              <div class="top_news_contents">
+                <p class="top_news_contents-date">2024.9.1
+                  <span class="top_news_contents_tag">new</span></p>
+                <div class="top_news_contents-ttl-wrapper">
+                  <p class="top_news_contents-ttl">季節限定メニュー始まります！</p>
+                  <a href="./detail.html" class="top_news-link"></a></button>
+                </div>
+              </div>
+                </div>
+              </div>
+              <div class="m_btn-wrapper top_menu_btn-wrapper js_problem">
+                <a href="" class="m_btn top_btn__more">more</a>
+                <!-- /.m_btn-wrapper -->
+              </div>
+            </div>
+    </section>
+  
+    <!-- top_access -->
+    <section class="top_access">
+      <div class="l_container js_problem-trigger">
+        <div class="l_contents">
+          <h2 class="top_section_title">Access</h2>
+          <div class="top_access_body js_problem">
+            <div class="top_access_map-wrapper">
+              <div class="top_access-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.2805745334927!2d139.7114525753558!3d35.67009283058654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c98d6485d29%3A0xf527f7de28aca29c!2z44CSMTUwLTAwMDEg5p2x5Lqs6YO95riL6LC35Yy656We5a6u5YmN77yT5LiB55uu77yR4oiS77yS77yV!5e0!3m2!1sja!2sjp!4v1726409703280!5m2!1sja!2sjp" width="343" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+  
+              <div class="top_access-contents ">
+                <div class="top_access_img-wrapper">
+                  <img src="img/logo.svg" alt="ロゴ" 
+                  width="146" height="72"  class="top_access_logo-img">
+                </div>
+                <div class="top_detail-wrap">
+                  <table class="top_access_detail-wrapper">
+                    <tr class="top_access_detail-tr">
+                      <th class="top_access_detail_icon-th">
+                        <img src="img/icon_clock.png" width="57" height="56"  alt="営業時間" class="top_access_icon">
+                      </th>
+                          <td class="top_access_detail-txt_td">11:00 ~ 20:00
+                            <span class="top_access-small">lo.19:00</span><br>
+                            火曜日　休</td>
+                    </tr>
+                    <tr class="top_access_detail-tr">
+                      <th class="top_access_detail_icon-th">
+                        <img src="img/icon_map.png" width="41" height="40" alt="連絡先" class="top_access_icon">
+                      </th>
+                      <td class="top_access_detail-txt_td">〒150 - 0001<br>
+                        東京都渋谷区神宮前3 - 1 - 25</td>
+                    </tr>
+                    <tr class="top_access_detail-tr">
+                      <th class="top_access_detail_icon-th">
+                        <img src="img/icon_tel.png" width="41" height="40"  alt="電話番号" class="top_access_icon">
+                      </th>
+                      <td class="top_access_detail-txt_td">000 - 0000 - 0000</td>
+                    </tr>
+                    <tr class="top_access_detail-tr">
+                      <th class="top_access_detail_icon-th">
+                        <img src="img/icon_instagram(brown).png" width="134" height="134" alt="instagram" class="top_access_icon">
+                      </th>
+                      <td class="top_access_detail-txt_td">
+                        @cafe_lelien
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+  
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- top_contact -->
+    <section class="top_contact">
+      <div class="l_container js_problem-trigger">
+        <div class="l_contents js_problem">
+          <h2 class="top_section_title">Contact</h2>
+          <div class="top_contact_body ">
+            <div class="top_contact-desc">ご質問、ご相談などはコチラからお受けいたします。<br>
+              お気軽にご連絡ください。</div>
+  
+            <div class="m_btn-wrapper top_contact_btn-wrapper">
+              <a href="" class="m_btn top_btn__contact">お問い合わせはコチラ</a>
+              <!-- /.m_btn-wrapper -->
+            </div>
+                </div>
+            </div>
+          </div>
+    </section>
+  </main>
+  
+  
+  
   <footer class="l_footer">
     <div class="l_footer-logo">
       <a href="./index.html" class="l_footer-logo_link">
@@ -137,6 +457,18 @@
     </p>
   </footer>
 
+    </body>
+  
+      
+   
 
-  </body>
+
+
+
+   
+
+  
+
+
+  
 </html>
