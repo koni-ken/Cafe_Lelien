@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>News</title>
+<meta name="description" content="安らぎへとあなたを繋ぐ" />
+<meta name="format-detection" content="telephone=no" />
+
+<!-- favicon/web-clip-icon -->
+<link rel="icon" href="favicon.ico" type="image/ico" />
+<link rel="icon" href="favicon.png" type="image/png" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="webclip.png" />
+
+ <!-- ogp -->
+<meta property="og:site_name" content="LeLien" />
+<meta property="og:url" content="サイトのURL（絶対パス）" />
+<meta property="og:type" content="website(Webサイトのトップページ) or article（記事ページなどトップページ以外のページ） or blog（ブログのトップページ）" />
+<meta property="og:title" content="LeLien" />
+<meta property="og:description" content="安らぎへとあなたを繋ぐ" />
+<meta property="og:image" content="OGP画像のURL（絶対ぱす）推奨サイズは1200*630" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="fb:app_id" content="AppID">
+
+<!-- twitter専用の出力いる？？？ -->
+<meta name="twitter:card" content="summary_large_image or summary" />
+<meta name="twitter:site" content="@twitter_id" />
+<meta name="twitter:description" content="安らぎへとあなたを繋ぐ" />
+<meta name="twitter:image:src" content="URL" />
+
+ <!-- google fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+ <!-- css -->
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/style.css" />
+
+<script src="js/main.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+
+  <body class="news">
+    <header class="l_header">
+        <h1 class="l_header-logo">
+          <a href="./index.html" class="l_header-logo_link">
+               <div class="l_header-logo_thumb-wrapper">
+                  <img src="./img/logo.svg" alt="ロゴ" width="500" height="500" class="l_header_thumb">
+                </div>
+        </a>
+      </h1>
+      
+        <nav class="l_header-nav js_navigation">
+          <ul class="l_header-nav_list">
+            <li class="l_header-nav_item">
+              <a href="index.html" class="l_header-nav_link js_nav-link js_nav-link__top">Top</a>
+            </li>
+            <li class="l_header-nav_item">
+          <a href="index.html#concept" class="l_header-nav_link ">Consept</a>
+            </li>
+            <li class="l_header-nav_item">
+              <a href="menu.html" class="l_header-nav_link js_nav-link js_nav-link__menu">Menu</a>
+            </li>
+            <li class="l_header-nav_item">
+              <a href="news.html" class="l_header-nav_link js_nav-link js_nav-link__news">News</a>
+            </li>
+            <li class="l_header-nav_item">
+              <a href="index.html#access" class="l_header-nav_link "> Access</a>
+            </li>
+            </li>
+            <li class="l_header-nav_item">
+              <a href="contact.html" class="l_header-nav_link js_nav-link js_nav-link__contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+            
+        <button class="m_hamburger js_hamburger">
+          <span class="m_hamburger-bar"></span>
+          <span class="m_hamburger-bar"></span>
+          <span class="m_hamburger-bar"></span>
+        </button>
+    </header>
+
+    <div class="m_kv-box">
+        <div class="m_kv kv-news">
+          <p class="m_kv-txt">News</p>
+        </div>  
+      </div>
+  
+  
+  
+      <main class="l_main">
+        <section class="news_section-conteiner">
+          <div class="l_contents">
+            <div class="l_container news_animetion">
+              <article class="news_contents">
+                <p class="news_contents-date">2024.11.15
+                  <span class="news_contents_sub-date">event</span>
+                </p>
+                <h2 class="news_contents-ttl"><a href="single.html" class="news_contents-link">バリスタ体験！
+                  
+                  ワークショップにお知らせ</a></h2>
+                <p class="news_contents-text">当店では、日々のコーヒータイムをさらに豊かにする特別なワークショップを開催しま…</p>
+              </article>
+              <article class="news_contents">
+                <p class="news_contents-date">2024.9.28
+                  <span class="news_contents_sub-date">info</span></p>
+                <h2 class="news_contents-ttl"><a href="single.html" class="news_contents-link">臨時休業のお知らせ</a></h2>
+                <p class="news_contents-text">いつもご利用いただきありがとうございます。 10月1日(火)は、設備の不具合により臨時…</p>
+              </article>
+              <article class="news_contents">
+                <p class="news_contents-date">2024.9.1
+                  <span class="news_contents_sub-date">new</span></p>
+                <h2 class="news_contents-ttl"><a href="single.html" class="news_contents-link">新メニュー登場！季節限定ドリンクをご紹介</a></h2>
+                <p class="news_contents-text">秋の訪れとともに、当店では季節の味を楽しんでいただける期間限定メニューをご用意しま…</p>
+              </article>
+              <article class="news_contents">
+                <p class="news_contents-date">2024.7.15
+                  <span class="news_contents_sub-date">info</span></p>
+                <h2 class="news_contents-ttl"><a href="single.html" class="news_contents-link">テイクアウト開始！自宅でもカフェの味をお楽しみください</a></h2>
+                <p class="news_contents-text">いつも当店をご利用いただき、誠にありがとうございます。準備が整いましたのでテイクアウ…</p>
+              </article>
+              <article class="news_contents">
+                <p class="news_contents-date">2024.6.30
+                  <span class="news_contents_sub-date">info</span></p>
+                <h2 class="news_contents-ttl"><a href="single.html" class="news_contents-link">感謝の気持ちを込めて！
+                  
+                  常連様向け特典のご案内</a></h2>
+                <p class="news_contents-text">いつも当店をご利用いただき、誠にありがとうございます。皆様のご愛顧に感謝の気持ちを…</p>
+              </article>
+              <article class="news_contents">
+                <p class="news_contents-date">2024.5.1
+                  <span class="news_contents_sub-date">info</span></p>
+                <h2 class="news_contents-ttl"><a href="single.html" class="news_contents-link">新規オープン！
+                  
+                  おすすめメニューを紹介します</a></h2>
+                <p class="news_contents-text">こんにちは！このたび、カフェを新しくオープンしました。店名はLeLien（ルリアン）…</p>
+              </article>
+            </div>
+            <div class="news_pagination">
+              <span class="news_pagination_numbers news_pagination_numbers__current">1</span>
+              <a href="" class="news_pagination_numbers">2</a>
+              <span class="news_pagination_numbers">…</span>
+              <a href="" class="news_pagination_numbers">5</a>
+              <a href="" class="news_pagination_numbers news_pagination_numbers__next"></a>
+            </div>
+          </div>
+        </div>
+  
+  
+        </section>
+      </main>
+  
+      
+      
+    <!-- footer -->
+    <footer class="l_footer">
+        <div class="l_footer-logo">
+        <a href="https://www.instagram.com/lelien.coffee?igsh=dnJreTYwaDk5ZnYz&utm_source=qr" target="_blank" class="l_footer-logo_link">
+                <div class="l_footer-logo_thumb-wrapper">
+                <img src="img/logo_white.svg" alt="ロゴ" class="l_footer_thumb">
+                </div>
+        </a>
+        </div>
+    
+        <div class="l_footer-nav">
+        <ul class="l_footer-nav_list">
+            <li class="l_footer-nav_item">
+            <a href="https://www.instagram.com/lelien.coffee?igsh=dnJreTYwaDk5ZnYz&utm_source=qr" target="_blank" class="l_footer-nav_link js_nav-link js_nav-link__top">Top</a>
+            </li>
+            <li class="l_footer-nav_item">
+            <a href="index.html#concept" class="l_footer-nav_link ">Consept</a>
+            </li>
+            <li class="l_footer-nav_item">
+            <a href="menu.html" class="l_footer-nav_link js_nav-link js_nav-link__menu">Menu</a>
+            </li>
+            <li class="l_footer-nav_item">
+            <a href="news.html" class="l_footer-nav_link js_nav-link js_nav-link__news">News</a>
+            </li>
+            <li class="l_footer-nav_item">
+            <a href="index.html#access" class="l_footer-nav_link">Access</a>
+            </li>
+            </li>
+            <li class="l_footer-nav_item">
+            <a href="contact.html" class="l_footer-nav_link js_nav-link js_nav-link__contact">Contact</a>
+            </li>
+        </ul>
+        </div>
+    <div class="l_footer-sns-icon_wrapper">
+        <a href="" class="l_footer-sns_link l_footer-nav_link"><img src="img/icon_instagram(white).png" alt="instagram" width="20" height="20" class="l_footer-sns_icon"></a>
+        </div>
+    <p class="l_footer-copyright">
+        <small class="l_footer-copyright_txt">&copy; 2024 LeLien.</small>
+        </p>
+    </footer>
+      
+  
+
+
+  </body>
+</html>

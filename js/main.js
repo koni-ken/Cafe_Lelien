@@ -322,3 +322,105 @@ $(document).ready(function() {
     });
   });
 
+// top_concept 
+gsap.from(".top_concept_js_problem", {
+  y: 200,
+  autoAlpha: 0,
+  duration: 1.5,
+  ease: "Power4.inOut",
+  scrollTrigger: {
+    trigger: ".top_concept_js_problem-trigger",
+    start: "top center",
+  },
+  stagger: {
+    // each: 指定した時間が経過された時に次の要素のアニメーションを開始する
+    each: 0.8,
+
+    from: "start",
+
+  },
+});
+
+
+// top_menu
+gsap.from(".top_menu_js_problem", {
+y: 200,
+autoAlpha: 0,
+duration: 1.5,
+ease: "Power4.inOut",
+scrollTrigger: {
+  trigger: ".top_menu_js_problem-trigger",
+  start: "top center",
+},
+stagger: {
+  // each: 指定した時間が経過された時に次の要素のアニメーションを開始する
+  each: 0.8,
+
+  from: "start",
+
+},
+});
+
+// top_news
+gsap.from(".top_news_js_problem", {
+y: 200,
+autoAlpha: 0,
+duration: 1.5,
+ease: "Power4.inOut",
+scrollTrigger: {
+  trigger: ".top_news_js_problem-trigger",
+  start: "top center",
+},
+stagger: {
+  // each: 指定した時間が経過された時に次の要素のアニメーションを開始する
+  each: 0.8,
+
+  from: "start",
+
+},
+});
+
+// top_access
+gsap.from(".top_access_js_problem", {
+y: 200,
+autoAlpha: 0,
+duration: 1.5,
+ease: "Power4.inOut",
+scrollTrigger: {
+  trigger: ".top_access_js_problem-trigger",
+  start: "top center",
+},
+stagger: {
+  // each: 指定した時間が経過された時に次の要素のアニメーションを開始する
+  each: 0.8,
+
+  from: "start",
+
+},
+});
+
+// top_contact
+gsap.from(".top_contact_js_problem", {
+y: 200,
+autoAlpha: 0,
+duration: 1.5,
+ease: "Power4.inOut",
+scrollTrigger: {
+  trigger: ".top_contact_js_problem-trigger",
+  start: "top center",
+},
+stagger: {
+  // each: 指定した時間が経過された時に次の要素のアニメーションを開始する
+  each: 0.8,
+
+  from: "start",
+
+},
+});
+
+
+
+
+
+
+

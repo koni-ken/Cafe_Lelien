@@ -563,6 +563,12 @@ body {
     position: absolute;
     right: 16px;
   }
+  .top_btn__more:hover {
+    background: var(--white-color);
+    color: var(--primary-color);
+    opacity: 0.7;
+    transition: all;
+}
 
   .top_btn__contact {
     color: var(--white-color);
@@ -591,6 +597,12 @@ body {
     right: 16px;
   }
 
+  .top_btn__contact:hover {
+    background: var(--white-color);
+    color: var(--primary-color);
+    opacity: 0.7;
+    transition: all;
+}
 
   .m_btn-wrapper {
     width: 297px;
@@ -767,18 +779,19 @@ body {
     margin-top: 48px;
   }
 
-  @media screen and (min-width: 1080px) {
+  @media screen and (min-width: 768px) {
     .top_menu_wrap {
       display: flex;
       gap: 32px;
     }
+    
   }
 
   .top_menu_item:not(:first-child) {
     margin-top: 32px;
   }
 
-  @media screen and (min-width: 1080px) {
+  @media screen and (min-width: 768px) {
     .top_menu_item:not(:first-child) {
       margin-top: 0px;
     }
@@ -1003,11 +1016,17 @@ body {
   @media screen and (min-width: 1080px) {
     .top_access_detail-txt_td {
       padding-top: 22px;
+      font-size: 20px;
     }
   }
 
   .top_access-small {
     font-size: 12px;
+  }
+  @media screen and (min-width: 1080px) {
+    .top_access-small {
+      font-size: 14px;
+    }
   }
 
   /* top_contact */
@@ -1191,7 +1210,7 @@ body {
   }
   
   .news_contents:last-of-type {
-    border-bottom: 0.5px solid var(--accent-color); 
+    border-bottom: 0.5px solid var(--primary-color); 
    }
   
   .news_contents-date {
@@ -1203,16 +1222,16 @@ body {
   .news_contents_sub-date {
     width: 52px;
     height: 22px;
-    border: 0.5px solid var(--accent-color);
+    border: 0.5px solid var(--primary-color);
     border-radius: 5px;
     font-size: 10px;
-    color: var(--accent-color);
+    color: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     right: 0;
-    transform: translateY(-100%);
+    transform: translate(-10%,-100%);
   }
   
   .news_contents-ttl {
@@ -1580,14 +1599,14 @@ body {
 }
 
 .single-meta_cat {
-  color: var(--accent-color);
+  color: var(--primary-color);
   font-size: 10px;
   width: 52px;
   height: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 0.5px solid var(--accent-color);
+  border: 0.5px solid var(--primary-color);
   border-radius: 4px;
 }
 

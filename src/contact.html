@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Contact</title>
+<meta name="description" content="安らぎへとあなたを繋ぐ" />
+<meta name="format-detection" content="telephone=no" />
+
+<!-- favicon/web-clip-icon -->
+<link rel="icon" href="favicon.ico" type="image/ico" />
+<link rel="icon" href="favicon.png" type="image/png" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="webclip.png" />
+
+ <!-- ogp -->
+<meta property="og:site_name" content="LeLien" />
+<meta property="og:url" content="サイトのURL（絶対パス）" />
+<meta property="og:type" content="website(Webサイトのトップページ) or article（記事ページなどトップページ以外のページ） or blog（ブログのトップページ）" />
+<meta property="og:title" content="LeLien" />
+<meta property="og:description" content="安らぎへとあなたを繋ぐ" />
+<meta property="og:image" content="OGP画像のURL（絶対ぱす）推奨サイズは1200*630" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="fb:app_id" content="AppID">
+
+<!-- twitter専用の出力いる？？？ -->
+<meta name="twitter:card" content="summary_large_image or summary" />
+<meta name="twitter:site" content="@twitter_id" />
+<meta name="twitter:description" content="安らぎへとあなたを繋ぐ" />
+<meta name="twitter:image:src" content="URL" />
+
+ <!-- google fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet"/>
+
+ <!-- css -->
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/style.css" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="js/main.js" defer></script>
+
+</head>
+
+  <body class="contact">
+
+    <header class="l_header">
+      <h1 class="l_header-logo">
+        <a href="./index.html" class="l_header-logo_link">
+             <div class="l_header-logo_thumb-wrapper">
+                <img src="./img/logo.svg" alt="ロゴ" width="500" height="500" class="l_header_thumb">
+              </div>
+      </a>
+      </h1>
+    
+      <nav class="l_header-nav js_navigation">
+        <ul class="l_header-nav_list">
+          <li class="l_header-nav_item">
+            <a href="index.html" class="l_header-nav_link js_nav-link js_nav-link__top">Top</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="index.html#concept" class="l_header-nav_link ">Consept</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="menu.html" class="l_header-nav_link js_nav-link js_nav-link__menu">Menu</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="news.html" class="l_header-nav_link js_nav-link js_nav-link__news">News</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="index.html#access" class="l_header-nav_link "> Access</a>
+</li>          <li class="l_header-nav_item">
+            <a href="contact.html" class="l_header-nav_link js_nav-link js_nav-link__contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+        
+      <button class="m_hamburger js_hamburger">
+        <span class="m_hamburger-bar"></span>
+        <span class="m_hamburger-bar"></span>
+        <span class="m_hamburger-bar"></span>
+      </button>
+    </header>
+<!-- header -->
+<!-- コンタクトページKV -->
+
+<div class="m_kv-box">
+  <div class="m_kv kv-contact">
+    <p class="m_kv-txt">Contact</p>
+  </div>  
+</div>
+
+
+
+<!-- TELセクション -->
+   <main class="l_main contact-main">
+    
+    <div class="l_container l_container-sm">
+    <div class="l_contents"> 
+        <p class="contact_message">フォームからのご予約は受け付けておりません。<br>
+            ご予約の際はお気軽に店舗にご連絡ください。
+        </p>
+        <div class="contact_tel_btn-wrapper">
+          <a
+             href=""
+             class="m_btn m_btn__right-arrow m_btn__tel">
+                    TEL
+                  </a>
+          </div>
+
+<!-- お問い合わせフォーム -->
+    <div class="contact-form-box">
+
+     <div class="contact_section">
+        <p class="contact_sec-ttl">お問い合わせフォーム</p>
+        <p class="contact_sec-text">ご質問やご相談などは、コチラのフォームに必要事項を入力して送信してください。</p>
+     </div>
+    
+            <form action="" class="contact_form">
+              <dl class="contact_form_list">
+                
+                <dt class="contact_form_heading">
+                  名前
+                  <span class="contact_form_required">必須</span>
+                  <span class="contact_form_example">例.山田 太郎</span>
+                </dt>
+                <dd class="contact_form_detail">
+                  <input type="text" class="contact_form_input" />
+                </dd>
+                <dt class="contact_form_heading">
+                  電話番号
+                  <span class="contact_form_required">必須</span>
+                  <span class="contact_form_example">例.000-0000-0000</span>
+                </dt>
+                <dd class="contact_form_detail">
+                  <input type="tel" class="contact_form_input" />
+                </dd>
+                <dt class="contact_form_heading">
+                  メールアドレス
+                  <span class="contact_form_required">必須</span>
+                  <span class="contact_form_example">例.example@co.jp</span>
+                </dt>
+                <dd class="contact_form_detail">
+                  <input type="email" class="contact_form_input" />
+                </dd>
+                
+                <dt class="contact_form_heading">
+                  お問い合わせ内容
+                  <span class="contact_form_required">必須</span>
+                </dt>
+                <dd class="contact_form_detail">
+                  <textarea
+                    class="contact_form_textarea"
+                    placeholder=""
+                  ></textarea>
+                </dd>
+              </dl>
+
+      <!-- プライバシーポリシーチェックボックス -->
+              <div class="contact_form_checkbox-wrapper">
+                <label class="contact_form_request-item-inner">
+                 <input
+                  type="checkbox"
+                  name="term"
+                  class="contact_form_checkbox"
+                 />
+                 <span class="contact_form_request-txt">
+                  <a href="" class="contact_form_privacy-link">プライバシーポリシー</a>に同意する</span>
+                </label>
+              </div>
+
+              <div class="contact_form_btn-wrapper">
+                <div class="m_btn m_btn__right-arrow">
+                  <input
+                    type="submit"
+                    class="m_btn_input"
+                    value="送　信"
+                  />
+                </div>
+                <!-- /.m_btn -->
+              </div>
+              <!-- /.contact_form_btn-wrapper -->
+            </form>
+    
+        </div>
+      </div>
+    </div>
+
+    </main>
+
+<!-- footer -->
+<footer class="l_footer">
+  <div class="l_footer-logo">
+    <a href="./index.html" class="l_footer-logo_link">
+         <div class="l_footer-logo_thumb-wrapper">
+            <img src="img/logo_white.svg" alt="ロゴ" class="l_footer_thumb">
+          </div>
+    </a>
+  </div>
+
+  <div class="l_footer-nav">
+    <ul class="l_footer-nav_list">
+      <li class="l_footer-nav_item">
+        <a href="https://www.instagram.com/lelien.coffee?igsh=dnJreTYwaDk5ZnYz&utm_source=qr" target="_blank" class="l_footer-nav_link js_nav-link js_nav-link__top">Top</a>
+      </li>
+      <li class="l_footer-nav_item">
+        <a href="index.html#concept" class="l_footer-nav_link ">Consept</a>
+      </li>
+      <li class="l_footer-nav_item">
+        <a href="menu.html" class="l_footer-nav_link js_nav-link js_nav-link__menu">Menu</a>
+      </li>
+      <li class="l_footer-nav_item">
+        <a href="news.html" class="l_footer-nav_link js_nav-link js_nav-link__news">News</a>
+      </li>
+      <li class="l_footer-nav_item">
+        <a href="index.html#access" class="l_footer-nav_link">Access</a>
+      </li>
+      </li>
+      <li class="l_footer-nav_item">
+        <a href="contact.html" class="l_footer-nav_link js_nav-link js_nav-link__contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+<div class="l_footer-sns-icon_wrapper">
+    <a href="" class="l_footer-sns_link l_footer-nav_link"><img src="img/icon_instagram(white).png" alt="instagram" width="20" height="20" class="l_footer-sns_icon"></a>
+  </div>
+<p class="l_footer-copyright">
+    <small class="l_footer-copyright_txt">&copy; 2024 LeLien.</small>
+  </p>
+</footer>
+
+
+</body>
+</html>
+
+ 
+   
+        </body>
+</html>

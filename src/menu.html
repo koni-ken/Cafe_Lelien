@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>MENU</title>
+<meta name="description" content="安らぎへとあなたを繋ぐ" />
+<meta name="format-detection" content="telephone=no" />
+
+<!-- favicon/web-clip-icon -->
+<link rel="icon" href="favicon.ico" type="image/ico" />
+<link rel="icon" href="favicon.png" type="image/png" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="webclip.png" />
+
+ <!-- ogp -->
+<meta property="og:site_name" content="LeLien" />
+<meta property="og:url" content="サイトのURL（絶対パス）" />
+<meta property="og:type" content="website(Webサイトのトップページ) or article（記事ページなどトップページ以外のページ） or blog（ブログのトップページ）" />
+<meta property="og:title" content="LeLien" />
+<meta property="og:description" content="安らぎへとあなたを繋ぐ" />
+<meta property="og:image" content="OGP画像のURL（絶対ぱす）推奨サイズは1200*630" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="fb:app_id" content="AppID">
+
+<!-- twitter専用の出力いる？？？ -->
+<meta name="twitter:card" content="summary_large_image or summary" />
+<meta name="twitter:site" content="@twitter_id" />
+<meta name="twitter:description" content="安らぎへとあなたを繋ぐ" />
+<meta name="twitter:image:src" content="URL" />
+
+ <!-- google fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+ <!-- css -->
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/style.css" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/main.js" defer></script>
+
+</head>
+
+  <body class="menu">
+
+    <header class="l_header">
+      <h1 class="l_header-logo">
+        <a href="./index.html" class="l_header-logo_link">
+             <div class="l_header-logo_thumb-wrapper">
+                <img src="./img/logo.svg" alt="ロゴ" width="500" height="500" class="l_header_thumb">
+              </div>
+        </a>
+    </h1>
+    
+      <nav class="l_header-nav js_navigation">
+        <ul class="l_header-nav_list">
+          <li class="l_header-nav_item">
+            <a href="index.html" class="l_header-nav_link js_nav-link js_nav-link__top">Top</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="index.html#concept" class="l_header-nav_link ">Consept</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="menu.html" class="l_header-nav_link js_nav-link js_nav-link__menu">Menu</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="news.html" class="l_header-nav_link js_nav-link js_nav-link__news">News</a>
+          </li>
+          <li class="l_header-nav_item">
+            <a href="index.html#access" class="l_header-nav_link "> Access</a>
+</li>          <li class="l_header-nav_item">
+            <a href="contact.html" class="l_header-nav_link js_nav-link js_nav-link__contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+        
+      <button class="m_hamburger js_hamburger">
+        <span class="m_hamburger-bar"></span>
+        <span class="m_hamburger-bar"></span>
+        <span class="m_hamburger-bar"></span>
+      </button>
+    </header>
+    
+
+    <div class="m_kv-box">
+      <div class="m_kv kv-menu">
+        <p class="m_kv-txt">Menu</p>
+      </div>  
+    </div>
+    
+  <main class="l_main">
+    <div class="menu_inner">
+
+    <section class="drink">
+      <h2 class="m_sec-ttl drink">drink</h2>
+   
+      <div class="menu_box">
+  
+            <ul class="menu_list">
+              <li class="menu_list-item">
+                <div class="menu_img-box">
+                  <img src="img/menu_drink01.jpg" alt="" width="662" height="458" class="menu_img" alt="カフェラテの画像">
+                </div>
+                <div class="menu_txt-box">
+                  <p class="menu_name">カフェラテ</p>
+                  <p class="menu_price">￥600</p>
+                </div><!-- menu_txt-box -->
+                <p class="menu_dtl">厳選されたコーヒー豆を丁寧に抽出し、クリーミーなミルクと絶妙にブレンドした一杯。</p>    
+              </li>
+              
+              <li class="menu_list-item">
+                <div class="menu_img-box">
+                  <img src="img/menu_drink02.jpg" alt="" width="662" height="458" class="menu_img" alt="ドリップコーヒーの画像">
+                </div>
+                <div class="menu_txt-box">
+                  <p class="menu_name">ドリップコーヒー</p>
+                  <p class="menu_price">￥500</p>
+                </div><!-- menu_txt-box -->
+                <p class="menu_dtl">鮮な豆を一杯ずつ丁寧にハンドドリップ。お湯の温度や注ぎ方にこだわり、豆本来の風味を最大限に引き出しました。</p>    
+              </li>
+
+              <li class="menu_list-item">
+                <div class="menu_img-box">
+                  <img src="img/menu_drink03.jpg" alt="" width="662" height="458" class="menu_img" alt="カフェモカの画像">
+                </div>
+                <div class="menu_txt-box">
+                  <p class="menu_name">カフェモカ</p>
+                  <p class="menu_price">￥700</p>
+                </div><!-- menu_txt-box -->
+                <p class="menu_dtl">チョコレートとエスプレッソの絶妙なハーモニーが楽しめる一杯。</p>    
+              </li>
+            </ul>
+
+            <ul class="menu_other-list">
+              <li class="menu_other-item">
+                <div class="menu_other-img-box">
+                  <img src="img/menu_drink04.jpg" alt="" width="520" height="356" class="otehr-menu_img" alt="ソイラテの画像">
+                </div>
+                <div class="menu_other-txt-box">
+                  <p class="menu_other-name">ソイラテ</p>
+                  <p class="menu_other-price">￥600</p>    
+                </div>
+              </li>
+              <li class="menu_other-item">
+                <div class="menu_other-img-box">
+                  <img src="img/menu_drink05.jpg" alt="" width="520" height="356" class="otehr-menu_img" alt="マキアートの画像">
+                </div>
+                <div class="menu_other-txt-box">
+                  <p class="menu_other-name">マキアート</p>
+                  <p class="menu_other-price">￥600</p>  
+                </div>
+              </li>
+              <li class="menu_other-item">
+                <div class="menu_other-img-box">
+                  <img src="img/menu_drink06.jpg" alt="" width="520" height="356" class="otehr-menu_img" alt="ココアの画像">
+                </div>
+                <div class="menu_other-txt-box">
+                  <p class="menu_other-name">ココア</p>
+                  <p class="menu_other-price">￥450</p>  
+                </div>
+              </li>
+              <li class="menu_other-item">
+                <div class="menu_other-img-box">
+                  <img src="img/menu_drink07.jpg" alt="" width="520" height="358" class="otehr-menu_img" alt="スムージーの画像">
+                </div>
+                <div class="menu_other-txt-box">
+                  <p class="menu_other-name">スムージー</p>
+                  <p class="menu_other-price">￥600</p>    
+                </div>
+              </li>
+            </ul>
+            
+      </div><!-- menu_box -->
+    </section>
+
+    <section class="food">
+
+      <h2 class="m_sec-ttl food">food</h2>
+
+      <div class="menu_box">
+  
+            <ul class="menu_list">
+              <li class="menu_list-item">
+                <div class="menu_img-box">
+                  <img src="img/menu_food01.jpg" alt="" width="662" height="458" class="menu_img" alt="メープルパンケーキの画像">
+                </div>
+                <div class="menu_txt-box">
+                  <p class="menu_name">メープルパンケーキ</p>
+                  <p class="menu_price">￥1500</p>
+                </div><!-- menu_txt-box -->
+                <p class="menu_dtl">１枚１枚丁寧に焼き上げたふわふわなパンケーキ。メープルシロップをたっぷりかけてお召し上がりください。</p>    
+              </li>
+              
+              <li class="menu_list-item">
+                <div class="menu_img-box">
+                  <img src="img/menu_food02.jpg" alt="" width="662" height="458" class="menu_img" alt="プリンの画像">
+                </div>
+                <div class="menu_txt-box">
+                  <p class="menu_name">喫茶店のプリン</p>
+                  <p class="menu_price">￥500</p>
+                </div><!-- menu_txt-box -->
+                <p class="menu_dtl">なめらかでとろけるような食感が魅力の自家製プリン。優しい甘さと濃厚なカスタードの風味が、どこか懐かしい味わいを届けます。</p>    
+              </li>
+
+              <li class="menu_list-item">
+                <div class="menu_img-box">
+                  <img src="img/menu_food03.jpg" alt="" width="678" height="474" class="menu_img" alt="季節のケーキセットの画像">
+                </div>
+                <div class="menu_txt-box">
+                  <p class="menu_name">季節のケーキセット</p>
+                  <p class="menu_price">￥700</p>
+                </div><!-- menu_txt-box -->
+                <p class="menu_dtl">季節のケーキとお好きなドリンクをセットで楽しめます。</p>    
+              </li>
+            </ul>
+
+            <ul class="menu_other-list">
+              <li class="menu_other-item">
+                <div class="menu_other-img-box">
+                  <img src="img/menu_food04.jpg" alt="" width="521" height="359" class="otehr-menu_img" alt="和風きのこパスタの画像">
+                </div>
+                <div class="menu_other-txt-box">
+                  <p class="menu_other-name">和風きのこパスタ</p>
+                  <p class="menu_other-price">￥1000</p>    
+                </div>
+              </li>
+              <li class="menu_other-item">
+                <div class="menu_other-img-box">
+                  <img src="img/menu_food05.jpg" alt="" width="521" height="359" class="otehr-menu_img" alt="こだわりカルボの画像">
+                </div>
+                <div class="menu_other-txt-box">
+                  <p class="menu_other-name">こだわりカルボ</p>
+                  <p class="menu_other-price">￥1200</p>  
+                </div>
+              </li>
+              <li class="menu_other-item">
+                <div class="menu_other-img-box">
+                  <img src="img/menu_food06.jpg" alt="" width="521" height="359" class="otehr-menu_img" alt="チキンサンドの画像">
+                </div>
+                <div class="menu_other-txt-box">
+                  <p class="menu_other-name">チキンサンド</p>
+                  <p class="menu_other-price">￥600</p>  
+                </div>
+              </li>
+              <li class="menu_other-item">
+                <div class="menu_other-img-box">
+                  <img src="img/menu_food07.jpg" alt="" width="537" height="375" class="otehr-menu_img" alt="チーズバーガーの画像">
+                </div>
+                <div class="menu_other-txt-box">
+                  <p class="menu_other-name">チーズバーガー</p>
+                  <p class="menu_other-price">￥1300</p>    
+                </div>
+              </li>
+            </ul>
+            
+      </div><!-- menu_box -->
+
+    </section>
+  
+
+    
+
+   </div> <!-- menu_inner -->
+</main>
+   <footer class="l_footer">
+    <div class="l_footer-logo">
+      <a href="./index.html" class="l_footer-logo_link">
+           <div class="l_footer-logo_thumb-wrapper">
+              <img src="img/logo_white.svg" alt="ロゴ" class="l_footer_thumb">
+            </div>
+      </a>
+    </div>
+  
+    <div class="l_footer-nav">
+      <ul class="l_footer-nav_list">
+        <li class="l_footer-nav_item">
+          <a href="https://www.instagram.com/lelien.coffee?igsh=dnJreTYwaDk5ZnYz&utm_source=qr" target="_blank" class="l_footer-nav_link js_nav-link js_nav-link__top">Top</a>
+        </li>
+        <li class="l_footer-nav_item">
+          <a href="index.html#concept" class="l_footer-nav_link ">Consept</a>
+        </li>
+        <li class="l_footer-nav_item">
+          <a href="menu.html" class="l_footer-nav_link js_nav-link js_nav-link__menu">Menu</a>
+        </li>
+        <li class="l_footer-nav_item">
+          <a href="news.html" class="l_footer-nav_link js_nav-link js_nav-link__news">News</a>
+        </li>
+        <li class="l_footer-nav_item">
+          <a href="index.html#access" class="l_footer-nav_link">Access</a>
+        </li>
+        </li>
+        <li class="l_footer-nav_item">
+          <a href="contact.html" class="l_footer-nav_link js_nav-link js_nav-link__contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  <div class="l_footer-sns-icon_wrapper">
+      <a href="" class="l_footer-sns_link l_footer-nav_link"><img src="img/icon_instagram(white).png" alt="instagram" width="20" height="20" class="l_footer-sns_icon"></a>
+    </div>
+  <p class="l_footer-copyright">
+      <small class="l_footer-copyright_txt">&copy; 2024 LeLien.</small>
+    </p>
+  </footer>
+
+
+  </body>
+</html>
